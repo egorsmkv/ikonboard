@@ -1,0 +1,175 @@
+Upgrade procedure for 3.0.W to 3.2 SQL database.
+
+Before you start this you must have:
+
+db password
+username
+db name
+table prefix => ib_ or something like that
+
+
+If you don't have those you must get them or you will be in trouble. If you look inside you existing forum directory in the /Data/Boardinfo.pm you will find it at the lines markes:
+
+        'DB_DIR'               => q!#######!,
+        'DB_DRIVER'        => q!mySQL!,
+        'DB_IP'                 => q!localhost!,
+        'DB_NAME'          => q!########
+        'DB_PASS'           => q!!,
+        'DB_PORT'           => q!!,
+        'DB_PREFIX'        => q!ib_!,
+        'DB_USER'          => q!#######!,
+
+You must take good note of that info because this new version will encrypt the password for more security.
+
+The first thing to do whae you found that info is to close down your existing forum. I recommend that you simply remove you existing ikonboard.cgi. This will prevent any access to the database when you are updating the database tables. If you have added any new feilds to the database tables they MUST BE REMOVED BEFORE you start the upgrade process. To do this you can use the SQL client or an interface like phpmyadmin. 
+
+Upload the alter_table.cgi script to the base directory of your old board. (that's where ikonboard.cgi was) CHMOD it to 0755 then run it with your browser. You should have an output that will look like this:
+
+#--------------------------
+
+Altering Table: ib30_active_sessions...
+
+Changed attribute to varchar(80)from USER_AGENT column
+Changed attribute to varchar(160)from LOCATION column
+
+Altering Table: ib30_authorisation...
+
+Changed attribute to varchar(64) NULL from _WHERE column.
+Created an index in the table (DATE_ENTERED)Created second index in the table (MEMBER_ID)Altering Table: ib30_forum_info...
+
+Changed attribute to int(6)from FORUM_TOPICS column
+Changed attribute to int(6)from FORUM_TOPICS column
+Changed attribute to bigint(10)from FORUM_LAST_POST column
+Changed attribute to bigint(10) from L_TOPIC_ID column
+
+Altering Table: ib30_forum_moderators...
+
+Changed attribute to mediumint(5) from MODERATOR_ID columnChanged attribute to smallint(5) from FORUM_ID column
+Added column ADD_TOPIC_WATCH
+Added column REMOVE_TOPIC_WATCH
+
+Altering Table: ib30_mod_posts...
+
+Changed attribute to int(8) from ID columnChanged attribute to varchar(32) from AUTHOR columnChanged attribute to varchar(16) from IP_ADDR columnChanged attribute to bigint(10) DEFAULT '0' from TOPIC_ID column
+Changed attribute to varchar(5) from TYPE columnChanged attribute to bigint(10) from POST_ID columnChanged attribute to varchar(64) from ATTACH_ID column
+Altering Table: ib30_moderator_logs...
+
+Changed attribute to mediumint(5) DEFAULT '0' NOT NULL from ID columnChanged attribute to smallint(5) from FORUM_ID column
+Changed attribute to bigint(10) DEFAULT '0' from TOPIC_ID column
+Changed attribute to bigint(10) DEFAULT '0' from POST_ID column
+
+Altering Table: ib30_search_log...
+
+Changed attribute to bigint(20) unsigned DEFAULT '0' NOT NULL from LOG_ID columnChanged attribute to bigint(10) DEFAULT '0' from TOPIC_ID column
+Changed attribute to bigint(10) DEFAULT '0' from POST_ID column
+Changed attribute to varchar(16) from POSTER_IP column
+Created index in the table (FORUM_ID,DATE)
+Altering Table: ib30_forum_polls...
+
+Changed attribute to bigint(10)from ID column
+Changed attribute to bigint(10)from POLL_ID column
+Changed attribute to int(10)from TOTAL_VOTES column
+Changed attribute to smallint(5) from FORUM_ID column
+Created index in the table (FORUM_ID,POLL_ID)
+Altering Table: ib30_calendar...
+
+Changed attribute to smallint(2)from DAY column
+Changed attribute to smallint(2)from MONTH column
+Changed attribute to smallint(2)from DAY column
+The UTIME column was added to the table
+The FORUM_ID column was added to the table
+The TOPIC_ID column was added to the table
+Created index in the table (FORUM_ID)Created second index in the table (TOPIC_ID)
+Altering Table: ib30_forum_posts...
+
+Changed attribute to bigint(10)from POST_ID column
+Changed attribute to tinyint(1)from ENABLE_SIG column
+Changed attribute to tinyint(1)from ENABLE_EMO column
+Changed attribute to varchar(16)from IP_ADDR column
+Changed attribute to bigint(10)from TOPIC_ID column
+Changed attribute to smallint(5)from FORUM_ID column
+Changed attribute to int(5)from ATTACH_HITS column
+Created index in the table (TOPIC_ID,QUEUED)Created second index in the table (TOPIC_ID,QUEUED)Created third index in the table (TOPIC_ID,QUEUED)
+Altering Table: ib30_forum_poll_voters...
+
+Changed attribute to smallint(5)from FORUM_ID column
+Changed attribute to bigint(10)from POLL_ID column
+Created index in the table (MEMBER_ID,POLL_ID,FORUM_ID)
+Altering Table: ib30_forum_topics...
+
+Changed attribute to bigint(10)from TOPIC_ID column
+Changed attribute to int(5)from TOPIC_VIEWS column
+Changed attribute to smallint(5)from FORUM_ID column
+WATCHED column added to table
+WATCHED column added to table
+Created index in the table (FORUM_ID,PIN_STATE,TOPIC_LAST_DATE)Created second index in the table (WATCHED,FORUM_ID)Created third index in the table (TOPIC_LAST_DATE)
+Altering Table: ib30_forum_rules...
+
+Changed attribute to smallint(5) DEFAULT '0' NOT NULL from ID column
+
+Altering Table: ib30_help...
+
+Changed attribute to int(3) unsigned DEFAULT '0' NOT NULL from ID column
+
+Altering Table: ib30_forum_subscriptions...
+
+Changed attribute to smallint(5) DEFAULT '0' NOT NULL from FORUM_ID column
+Changed attribute to bigint(10) DEFAULT '0' NOT NULL from TOPIC_ID column
+Changed attribute to tinyint(1) DEFAULT '0' NOT NULL from LAST_SENT renamed to SEND_ONCE column
+Created index in the table (FORUM_ID,TOPIC_ID,MEMBER_ID)
+Altering Table: ib30_message_data...
+
+Changed attribute to bigint(10) unsigned DEFAULT '0' NOT NULL from MESSAGE_ID column
+Created index in the table (MEMBER_ID)Created second index in the table (DATE)
+Altering Table: ib30_message_stats...
+
+Changed attribute to varchar(128) from LAST_MSG_TITLE column
+Changed attribute to bigint(10) from LAST_MSG_ID column
+Changed attribute to int(4) from TOTAL_MESSAGES column
+
+Altering Table: ib30_mem_groups...
+
+ADD_EVENT column added to table
+UPLOAD_AVATARS column added to table
+MAX_MESSAGES column added to table
+
+Altering Table: ib30_mod_email...
+
+The mod_email table is now droped
+
+Creating Table: ib30_mod_email...
+
+
+Altering Table: ib30_member_profiles...
+
+Changed attribute to text NULL from INTERESTS column
+Changed attribute to varchar(128) NULL from PHOTO column
+Changed attribute to tinyint(1) DEFAULT 1 from ALLOW_ADMIN_EMAILS column
+Changed attribute to char(3) from EMAIL_FULL_POST column
+Changed attribute to tinyint(1) from HIDE_EMAIL column
+Changed attribute to tinyint(2) from WARN_LEVEL column
+LAST_LOG_IN column added to table
+LAST_ACTIVITY column added to table
+GENDER column added to table
+MEMBER_NAME_R column added to table
+POST_FONT_COLOR column added to table
+
+Creating Table: ib30_topic_views...
+
+
+Creating Table: ib30_member_notepads...
+
+All done, you may now remove this script
+
+#-------------------------------
+
+Note that it may take a few minutes to run through this script if you are on a large database. We are creating indexes and that takes time to do. When the script is all done, you will get that output. It tells you what as been done to the tables. as you can see, it is quite a large change from the old shema.
+
+
+When you have finished with the script, you MUST remove it for SECURITY reasons. 
+
+You then follow the regular procedure for a clean install. (follow the procedure in the included install guide) When you have reached the step where you enter the database info, you enter the the info that you have found in an earlier step and enter it there. Where it is asking you if you want IB to create the tables for you, you say NO, YOU MUST SAY NO THERE. When you have entered that info and you have triplecheched everything you click ONCE on the next arrow to continue. Before you click any further look inside the /Data folder using an ftp client and try to find a file called Boardinfo.cgi, if it's not there click again on the arrow to go to the next step. Look again inside the Data/ dir an try to find the Boardinfo.cgi file, it should now be there if it all worked well. You must stop just before IB populates the tables with the base info. 
+
+When you see the file your upgrade is completed. Remove the files installer.cgi and ikonboard.conf and all the .tar files for security reasons again and you should then be able to login to you new IB3.1
+
+Have fun with it.

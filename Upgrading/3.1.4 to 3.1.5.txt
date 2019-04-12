@@ -1,0 +1,43 @@
+##################################################################
+##								##
+##		iB 3.1.4 to iB 3.1.5 Information		##
+##								##
+##################################################################
+
+*******************
+* What's Changed  *
+*******************
+=> Fixed a bug resulting in the pinned header appearing on every 
+   page if there are pinned topics in the forum.
+=> Increased security for the private messenger.
+=> Team List skin is now editable via AdminCP.
+=> Fixed clickable emoticons in signatures bug.
+=> Fixed a couple minor issues when viewing topic.
+=> Smilies are now case insensitive, thus aren't affected when stop 
+   members from shouting is active.
+=> Fixed move topic bug.
+=> Fixed wildcard ban bug.
+
+
+*******************
+*  Changed Files  *
+*******************
+Data/SkinList.cfg
+Sources/Forum.pm
+Sources/iTextparser.pm
+Sources/ModCP.pm
+Sources/Post.pm
+Sources/Register.pm
+Sources/Topic.pm
+Sources/Lib/Func.pm
+Sources/Search/API/api_mysql.pm
+Sources/UserCP/Messend.pm
+Skin/Default/MenuView.pm
+Skin/Default/TopicView.pm
+ikonboard.cgi
+
+
+******************
+*  Known issues  *
+******************
+There are no known issues as of being released.

@@ -1,0 +1,30 @@
+For 3.1.3 RC1:
+
+ikonboard.cgi
+installer.cgi
+/iB_html/Skin/Default/ikonboard.css
+/Sources/Lib/Func.pm
+/Sources/Post.pm
+/Sources/Topic.pm
+/Sources/iTextParser.pm
+/Sources/Admin/SKIN.pm
+/Sources/Admin/Menuadmin.pm
+/Skin/Default/PostView.pm
+/Skin/Default/TopicView.pm
+/Skin/Default/SearchView.pm
+/Skin/Default/gfx_data.cfg
+
+From 3.1.3 RC1 to 3.1.3 Final:
+
+/Sources/Lib/Func.pm
+/Sources/Admin/Options.pm
+/Sources/Admin/Index.pm
+/Sources/Mail/Sendmail.pm
+/Sources/UserCP/masssend.pm
+/Sources/Profile.pm (bugfix by sganjam so Feb 29 birthdays don't kill the profile)
+iB_html/Skin/Default/ikonboard.css
+/Skin/Default/BoardsView.pm
+/Languages/en/BoardWords.pm
+ikonboard.cgi
+ikonboard.conf
+3.1.3 credits.txt

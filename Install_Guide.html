@@ -1,0 +1,1076 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Ikonboard 3.1.5 Setup and Installation Guide</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#DFE6EF">
+<!-- This CSS code causes text links to change colour on mouseover xxxxxxxxxxxxxxxxxxxxxxxx -->
+<STYLE TYPE="text/css">
+A, A:link, A:visited, A.hoversense:link, A.hoversense:visited { color: #0000CC }
+A:hover { color: #FF0000 }
+</STYLE>
+<!-------------------------------------------------------------------------------------------->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!--DWLayoutTable-->
+  <tr> 
+    <td height="63" align="center" valign="top"> 
+      <table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#000099" bgcolor="#FFFFFF">
+        <tr>
+          <td height="60" align="center" valign="top" bordercolor="#4898E0" background="img/bluebk2.gif" bgcolor="#4898E0"><font color="#FFFFFF" size="5" face="Verdana, Arial, Helvetica, sans-serif"><strong>Ikonboard 
+            - version 3.1.5A<br>
+            Installation &amp; Setup Guide</strong></font></td>
+        </tr>
+      </table>
+      <img src="../! kellycamo/spacer.gif" alt="" width="750" height="1"> </td>
+  </tr>
+  <tr> 
+    <td height="2"><img src="img/spacer.gif" alt="" width="750" height="1"></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!--DWLayoutTable-->
+  <tr>
+    <td height="19" align="left" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+  </tr>
+  <tr> 
+    <td height="19" align="left" valign="top"><table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="26" align="center" valign="middle" bordercolor="#000099" background="img/bluebk.jpg" bgcolor="#4898E0"><font color="#FFFFFF" size="3" face="Verdana, Arial, Helvetica, sans-serif"><strong>Welcome</strong></font></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="23" align="left" valign="top"> <table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="21" align="center" valign="top" bordercolor="#000099" bgcolor="#FFFFFF"> 
+            <table width="98%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td align="left" valign="top"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><br>
+                  Thank you for downloading Ikonboard. &nbsp; We appreciate your 
+				interest in our product and have provided these guides to make 
+				installation as painless as possible.&nbsp; Please read the 
+				directions carefully prior to installing this script on your 
+				server.&nbsp; If you have difficulty, even after reading these 
+				instructions, you may 
+                  fill out a <a href="http://impluxdesigns.com">support ticket</a>. 
+                  &nbsp; The members of Ikonboard's support team will help you 
+                  resolve your issues where possible. Often, other members will 
+                  be there also to help assist you with common questions or problems. 
+                  <br>
+                  <br>
+                  Remember there are a lot of people using that board, so be patient 
+                  when asking for help. Team members WILL get to you as soon as 
+                  they see your post and have an idea how to troubleshoot your 
+                  particular situation. If you wish a trained technician form 
+                  the Ikonboard support team will install your board for you for 
+                  the set fee of $12.99. Full details can be found in the
+				<a href="http://impluxdesigns.com">member 
+                  area</a> under advanced services.<br>
+                  <br>
+                  For your convenience, words in with a (<img src="img/aq.gif" width="9" height="11">) 
+                  immediately before them are defined by clicking on the question 
+                  mark.</font> </td>
+              </tr>
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="2"><img src="img/spacer.gif" alt="" width="1" height="1"><img src="img/spacer.gif" alt="" width="750" height="1"></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!--DWLayoutTable-->
+  <tr>
+    <td height="19" align="left" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+  </tr>
+  <tr> 
+    <td height="19" align="left" valign="top"><table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="26" align="center" valign="middle" bordercolor="#000099" background="img/bluebk.jpg" bgcolor="#4898E0"><font color="#000099" size="2" face="Verdana, Arial, Helvetica, sans-serif"><b><font color="#FFFFFF" size="3">In 
+            order to put ikonboard on your site, you will need to have :</font></b></font></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="259" align="left" valign="top"> 
+      <table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="257" align="center" valign="top" bordercolor="#000099" bgcolor="#FFFFFF"> 
+            <table width="98%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td align="right" valign="top"><table width="96%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td width="6%">&nbsp;</td>
+                      <td width="94%">&nbsp;</td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><strong><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">1)</font></strong></td>
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">A 
+                        website that allows self-installed cgi scripts.</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><strong><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">2)</font></strong></td>
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">An 
+                        (<a href="Glossary.html#ftp"><img src="img/aq.gif" border="0"></a>) 
+                        FTP client. A good source to find one is <a href="http://downloads-zdnet.com.com/3150-2160-0.html?tag=dir">ZDNet.com</a>, 
+                        if you don't have one. Some of the more popular ones are 
+                        <a href="http://www.smartftp.com/">Smart FTP</a> for Windows 
+                        users, and <a href="http://www.fetchsoftworks.com/">Fetch</a> 
+                        for Mac users. (NOTE: <i>We are not associated in any 
+                        way with these companies, these are simply the most frequently 
+                        recommended programs by iB users</i>.)</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><strong><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">3)</font></strong></td>
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">A 
+                        host that has installed Perl 5 or better with the DB_file 
+                        module installed.</font></td>
+                    </tr>
+                    <tr> 
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr> 
+                <td><font color="#000000" size="2" face="Verdana"><i>Please note 
+                  that although we offer MySQL databases for Ikonboard, that it 
+                  is not a requirement to have MySQL capabilities on your site 
+                  in order to use this version of iB.<br>
+                  <br>
+                  If you decide to use MySQL at a later date, this can be set 
+                  up easily in your Admin Control Panel</i></font> </td>
+              </tr>
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="2"><img src="img/spacer.gif" alt="" width="750" height="1"></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!--DWLayoutTable-->
+  <tr> 
+    <td height="19" align="left" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+  </tr>
+  <tr> 
+    <td height="19" align="left" valign="top"><table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="26" align="center" valign="middle" bordercolor="#000099" background="img/bluebk.jpg" bgcolor="#4898E0"><font color="#FFFFFF" size="3" face="Verdana, Arial, Helvetica, sans-serif"><strong>Step 
+            1 - Getting Started</strong></font></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="481" align="left" valign="top"> 
+      <table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="479" align="center" valign="top" bordercolor="#000099" bgcolor="#FFFFFF"> 
+            <table width="98%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td align="left" valign="top"> <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Inside 
+                    your iB zip file, you should see the following folders</b> 
+                    :<br>
+                    <br>
+                    [img]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Tools]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Upgrading]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    &nbsp; [Upload_Files] </font></p>
+                  <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a name="CGI2"></a>If 
+                    you have never installed ikonboard before, or are not sure 
+                    what your sendmail path, or directory paths are, then you 
+                    will want to go into the Upload_Files folder first, then into 
+                    the cgi-bin folder to find the (<a href="Glossary.html#CGI"><img src="img/aq.gif" width="9" height="11" border="0"></a>) 
+                    perl_test.cgi script. If you have installed ikonboard before, 
+                    and know all your paths, please skip to <a href="#Step2">Step 
+                    2</a>. Sign into your site with your FTP client and look for 
+                    a cgi-bin. Here are a few examples of what you might see. 
+                    Please find the one closest to your directory structure and 
+                    follow it based upon color references. <b><font color="#006A35">Dark 
+                    Green</font></b> will represent your html folder and <b><font color="#0000FF">Blue</font></b> 
+                    will represent your cgi folder.</font></p></td>
+              </tr>
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td><table width="100%" border="1" cellspacing="2" cellpadding="5" bgcolor="#DFE6FF" bordercolor="#565136">
+                    <tr> 
+                      <td width="33%"> <p align="center"><font face="Verdana" size="2"><font color="#0000FF"><b>cgi-bin</b></font><font color="#3C2466">/</font><br>
+                          <font color="#006A35"><b>httpdocs</b></font>/</font></p></td>
+                      <td width="33%"> <div align="center"><font face="Verdana" size="2"><font color="#0000FF"><b>cgi-bin</b></font><font color="#3C2466">/</font><br>
+                          <font color="#006A35"><b>www</b></font>/</font></div></td>
+                      <td width="33%"> <div align="center"><font face="Verdana" size="2"><font color="#0000FF"><b>cgi-bin</b></font><font color="#3C2466">/</font><br>
+                          <font color="#006A35"><b>public_html</b></font>/</font> 
+                        </div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Verdana" size="2"><font color="#006A35"><b>public_html</b></font>/<font color="#0000FF"><b>cgi-bin</b></font><font color="#3C2466">/</font><br>
+                          (where cgi-bin is inside public_html folder)</font></div></td>
+                      <td> <div align="center"><font face="Verdana" size="2"><font color="#006A35"><b>www</b></font>/<b><font color="#004080">c</font><font color="#0000FF">gi-bin</font></b>/<br>
+                          (where cgi-bin is inside www folder)</font></div></td>
+                      <td> <div align="center"><font face="Verdana" size="2">/<b><font color="#0000FF">cgi-bin</font></b><br>
+                          (where there is only one place to upload with cgi or 
+                          cgi-bin is inside of it)</font></div></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td><p><a name="chmod2"></a><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><img src="img/bullet.gif" width="10" height="11">&nbsp;&nbsp;&nbsp;If 
+                    you do not see a cgi-bin, or a folder named cgi or something 
+                    similar, then you will need to make one, as long as you know 
+                    your host supports cgi. Create the folder and (<a href="Glossary.html#chmod"><img src="img/aq.gif" width="9" height="11" border="0"></a>) 
+                    CHMOD it to 755.&nbsp;&nbsp;<font color="#C43C3C">** Please 
+                    Note : Windows servers do not accept CHMOD values. The steps 
+                    discussing CHMOD may be skipped if your site is hosted on 
+                    a Windows server. **</font></font></p>
+                  <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+                    Once you have pulled it up in your browser window, you should 
+                    see these items listed on the page if the script has been 
+                    allowed to work. Remember yours will be different depending 
+                    on how your host is set up :</font></p></td>
+              </tr>
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="2"><img src="img/spacer.gif" alt="" width="750" height="1"></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!--DWLayoutTable-->
+  <tr> 
+    <td height="19" align="left" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+  </tr>
+  <tr> 
+    <td height="19" align="left" valign="top"><table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="26" align="center" valign="middle" bordercolor="#000099" background="img/bluebk.jpg" bgcolor="#4898E0"><font color="#000000" size="3" face="Verdana, Arial, Helvetica, sans-serif"><strong><font color="#FFFFFF">Ikonboard 
+            Path and Environment Test</font></strong></font><font color="#FFFFFF" size="3" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="1751" align="left" valign="top"> 
+      <table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="1749" align="center" valign="top" bordercolor="#000099" bgcolor="#FFFFFF"> 
+            <table width="98%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">This 
+                  script checks your paths and environment variables and prints 
+                  the results based on its best information available. </font></td>
+              </tr>
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td><table width="328">
+                    <tr> 
+                      <td width="280"><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Has 
+                        DB_File Perl module installed?</font></strong></td>
+                      <td width="30"><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Yes</font></strong></td>
+                    </tr>
+                    <tr> 
+                      <td><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Has 
+                        CGI Perl module installed?</font></strong></td>
+                      <td><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Yes</font></strong></td>
+                    </tr>
+                    <tr> 
+                      <td><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Has 
+                        DBI Perl module installed?</font></strong></td>
+                      <td><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Yes</font></strong></td>
+                    </tr>
+                    <tr> 
+                      <td><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Has 
+                        DBD-Mysql Perl module installed?</font></strong></td>
+                      <td><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Yes</font></strong></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td align="left" valign="top"><font size="2"> 
+                  <div id="error"><font face="Verdana, Arial, Helvetica, sans-serif"><b><font color="#000000">Results:</font></b> 
+                    <font color="#000000"><br>
+                    <br>
+                    You can run either a DBM or SQL database as all required perl 
+                    modules are installed. You will need to contact your server 
+                    administrator for SQL usage information.</font></font></div>
+                  <font color="#000000" face="Verdana, Arial, Helvetica, sans-serif"> 
+                  <br>
+                  <b>Environment:</b> </font></font></td>
+              </tr>
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td><table>
+                    <tr align="left" valign="top"> 
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">$ENV{SERVER_SOFTWARE}:</font></td>
+                      <td id="plain"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">Apache/1.3.27 
+                        (Unix) FrontPage/5.0.2.2510 mod_ssl/2.8.12 OpenSSL/0.9.6g</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">$ENV{GATEWAY_INTERFACE}:</font></td>
+                      <td id="plain"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">CGI/1.1</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">$ENV{DOCUMENT_ROOT}:</font></td>
+                      <td id="plain"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">/www/u/username/htdocs</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">$ENV{UNIQUE_ID}:</font></td>
+                      <td id="plain"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">PsC2-n8AAAEAAOGfm1A</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">$ENV{REMOTE_ADDR}:</font></td>
+                      <td id="plain"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">10.100.1.1</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">$ENV{SERVER_PROTOCOL}:</font></td>
+                      <td id="plain"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">HTTP/1.1</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">$ENV{SERVER_SIGNATURE}:</font></td>
+                      <td id="plain"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">$ENV{REQUEST_METHOD}:</font></td>
+                      <td id="plain"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">GET</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">$ENV{ALIAS}:</font></td>
+                      <td id="plain"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">/www/u/username/cgi-bin/ikonboard/perl_test.cgi</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">$ENV{QUERY_STRING}:</font></td>
+                      <td id="plain"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">$ENV{HTTP_USER_AGENT}:</font></td>
+                      <td id="plain"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">Mozilla/4.0 
+                        (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 1.1.4322)</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">$ENV{PATH}:</font></td>
+                      <td id="plain"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">/etc:/bin:/sbin:/usr/bin:/usr/sbin</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">$ENV{HTTP_ACCEPT}:</font></td>
+                      <td id="plain"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">*/*</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">$ENV{HTTP_CONNECTION}:</font></td>
+                      <td id="plain"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">Keep-Alive</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">$ENV{REMOTE_PORT}:</font></td>
+                      <td id="plain"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">13084</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">$ENV{SERVER_ADDR}:</font></td>
+                      <td id="plain"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">207.70.170.23</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">$ENV{ssl_unclean_shutdown}:</font></td>
+                      <td id="plain"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">1</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">$ENV{HTTP_ACCEPT_LANGUAGE}:</font></td>
+                      <td id="plain"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">en-us</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">$ENV{nokeepalive}:</font></td>
+                      <td id="plain"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">1</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">$ENV{SCRIPT_NAME}:</font></td>
+                      <td id="plain"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">/cgi-bin/ikonboard/perl_test.cgi</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">$ENV{HTTP_ACCEPT_ENCODING}:</font></td>
+                      <td id="plain"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">gzip, 
+                        deflate</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">$ENV{SCRIPT_FILENAME}:</font></td>
+                      <td id="plain"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">/www/u/username/cgi-bin/ikonboard/perl_test.cgi</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">$ENV{SERVER_NAME}:</font></td>
+                      <td id="plain"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">www.ikonboard.net</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">$ENV{REQUEST_URI}:</font></td>
+                      <td id="plain"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">/cgi-bin/ikonboard/perl_test.cgi</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td valign="middle"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">$ENV{HTTP_COOKIE}:</font></td>
+                      <td id="plain"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">lastactivity=1052807513; 
+                        lastvisit=1052800920; iBSessionID=e294f3837019d51f542b4278cc462232; 
+                        iBPassWord=5bf2658edf34678279f5aac14ee204db; iBMemberID=87-1052806881; 
+                        skin=Default; lang=en; ARRAY(0x804e054); fPrefs=1%3A30%3ATOPIC_LAST_DATE%3AZ-A%3A0; 
+                        LPid=1052807512; stsf_lastactivity=1052794329; stsf_lastvisit=1052783909; 
+                        stsf_iBSessionID=84da65f82987e4aebe1f0e7ea018cd57; stsf_iBPassWord=5bf2658edf34678279f5aac14ee204db; 
+                        stsf_iBMemberID=87-1030766046; stsf_skin=Default; stsf_lang=en; 
+                        stsf_fPrefs=17%3A100%3ATOPIC_LAST_DATE%3AZ-A%3A0; stsf_LPid=1052794299</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">$ENV{downgrade_1_0}:</font></td>
+                      <td id="plain"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">1</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">$ENV{SERVER_PORT}:</font></td>
+                      <td id="plain"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">80</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">$ENV{force_response_1_0}:</font></td>
+                      <td id="plain"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">1</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">$ENV{HTTP_HOST}:</font></td>
+                      <td id="plain"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">www.ikonboard.net</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">$ENV{SERVER_ADMIN}:</font></td>
+                      <td id="plain"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">webmaster@domain.com</font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td align="left" valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>Include 
+                  Path: </b> </font> <ul>
+                    <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">/usr/local/lib/perl5/site_perl/5.005/i386-freebsd</font></li>
+                    <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">/usr/local/lib/perl5/site_perl/5.005</font></li>
+                    <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">.</font></li>
+                    <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">/usr/libdata/perl/5.00503/mach</font></li>
+                    <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">/usr/libdata/perl/5.00503</font></li>
+                  </ul></td>
+              </tr>
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td align="right" valign="top"> <table width="96%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td width="6%"><font face="Verdana" size="2"><img src="img/bullet.gif" width="10" height="11"></font></td>
+                      <td width="94%"><font face="Verdana" size="2">If your board 
+                        does not have the DB_File and DBI perl file module installed, 
+                        you will not be able to use Ikonboard.</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><font face="Verdana" size="2"><img src="img/bullet.gif" width="10" height="11"></font></td>
+                      <td><font face="Verdana" size="2">If you do not have the 
+                        DBD-Mysql perl module installed, you will not be able 
+                        to use a mySQL database</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><font face="Verdana" size="2"><img src="img/bullet.gif" width="10" height="11"></font></td>
+                      <td><font face="Verdana" size="2">The &quot;</font><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a id="bold">The 
+                        absolute path to this script is:</a></font><font face="Verdana" size="2">&quot; 
+                        shows you your cgi-path, which you will want to make note 
+                        of, as you will need that when running the installer.</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><font face="Verdana" size="2"><img src="img/bullet.gif" width="10" height="11"></font></td>
+                      <td><font face="Verdana" size="2">If you see a bunch of 
+                        code on the page when you go to access the script, the 
+                        the site or directory is not configured for Perl usage, 
+                        and you will be unable to run ikonboard on your server.</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td><font face="Verdana" size="2"><img src="img/bullet.gif" width="10" height="11"></font></td>
+                      <td><font face="Verdana" size="2">If you get an Internal 
+                        Server Error, please check first to see if you CHMOD the 
+                        file correctly. It should be RWXR_XR_X or 755. If it is 
+                        CHMOD correctly and you still get an Internal Server Error, 
+                        then check to make sure your cgi-bin has also been CHMOD 
+                        correctly to 755. If the error occurs still after checking 
+                        those two things, then you will need to contact your host, 
+                        as something has not been configured correctly or they 
+                        may not support cgi scripts.<br>
+                        <br>
+                        If everything checks out OK to this point, then you are 
+                        ready to proceed to <a href="#Step2">Step 2</a>. Please 
+                        note : You may wish to keep this open in a separate browser 
+                        window during the install process, as you may need to 
+                        reference the send mail and directory path during the 
+                        run of the installer script.</font></td>
+                    </tr>
+                    <tr> 
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table>
+            <table width="100%" border="1" cellspacing="2" cellpadding="5" bgcolor="#DFE6EF" bordercolor="#565136" align="right">
+              <tr> 
+                <td width="50%" bgcolor="#DFE6EF" bordercolor="#ECEAE1"> <div align="center"><i><font size="2">&nbsp;</font><font face="Verdana" size="1">These 
+                    are two examples of the CHMOD values you will use during the 
+                    installation of Ikonboard. Depending on the FTP client you 
+                    have chosen, the placement of &quot;Owner&quot;, &quot;Group&quot;, 
+                    &amp; &quot;Everyone&quot; may be different and &quot;Everyone&quot; 
+                    may be replaced by &quot;World&quot;. The effect is no different, 
+                    regardless of what it's called, so long as you understand 
+                    what value you are giving your files and to whom.</font></i></div></td>
+                <td width="25%"> <div align="center"><b>Example of &quot;755&quot;</b><br>
+                    <img src="img/fig_a.gif" width="179" height="106"></div></td>
+                <td width="20%"> <div align="center"><b>Example of &quot;777&quot;</b><br>
+                    <img src="img/fig_b.gif" width="179" height="107"></div></td>
+              </tr>
+            </table> </td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="2"><img src="img/spacer.gif" alt="" width="750" height="1"></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!--DWLayoutTable-->
+  <tr> 
+    <td height="19" align="left" valign="top"><a name="Step2"></a></td>
+  </tr>
+  <tr> 
+    <td height="19" align="left" valign="top"><table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="26" align="center" valign="middle" bordercolor="#000099" background="img/bluebk.jpg" bgcolor="#4898E0"><font size="+1" color="#8C2631"><strong><font color="#FFFFFF" size="3" face="Verdana, Arial, Helvetica, sans-serif"></font></strong><font color="#FFFFFF" size="3" face="Verdana, Arial, Helvetica, sans-serif"><strong>Step 
+            2 - Uploading &amp; Setting File Permissions :</strong></font></font></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="23" align="left" valign="top"> <table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="21" align="center" valign="top" bordercolor="#000099" bgcolor="#FFFFFF"> 
+            <table width="98%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td align="left" valign="top"> 
+                  <p><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">Now 
+                    it's time for the good stuff. Please read the instructions 
+                    below and follow them very carefully. 97% of all installation 
+                    problems are avoidable by paying attention to the instructions.</font></p> 
+                  <p><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">Navigate 
+                    into your Upload_Files folder. This is what will be in that 
+                    folder :</font></p></td>
+              </tr>
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td><table width="100%" border="0" cellspacing="2" cellpadding="5">
+                    <tr> 
+                      <td valign="top" rowspan="2" width="25%"><font face="Verdana" size="2"><img src="img/Dir.gif"> 
+                        cgi-bin<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/Dir.gif"> 
+                        BACK_UP<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                        <img src="img/html.gif"> index.html <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/Dir.gif"> 
+                        Data<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                        <img src="img/html.gif"> index.html <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/Dir.gif"> 
+                        Database<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                        <img src="img/html.gif"> index.html <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/Dir.gif"> 
+                        INCOMING<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                        <img src="img/html.gif"> index.html <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/Dir.gif"> 
+                        INSTALL_DATA<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/txt.gif"> 
+                        board_rules.dat<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/txt.gif"> 
+                        email_template.dat<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/txt.gif"> 
+                        mem_groups.dat<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/txt.gif"> 
+                        ssi_templates.dat<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/html.gif"> 
+                        cgi_path.html<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/html.gif"> 
+                        cgi_url.html<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/html.gif"> 
+                        global_template.html<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/html.gif"> 
+                        index.html <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/html.gif"> 
+                        news.html<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/html.gif"> 
+                        non-cgi_path.html<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/html.gif"> 
+                        non-cgi_url.html<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/html.gif"> 
+                        register.html<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/html.gif"> 
+                        tiker.html<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/txt2.gif"> 
+                        help.txt<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/txt2.gif"> 
+                        mysql_schema.txt<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/txt2.gif"> 
+                        oracle_schema.txt<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<img src="img/txt2.gif"> 
+                        postgres_schema.txt<br>
+                        </font> <p><font face="Verdana" size="1"> (continued next 
+                          column)</font></p></td>
+                      <td valign="top" rowspan="2" width="25%"> <p>&nbsp;&nbsp;&nbsp;&nbsp;<font face="Verdana" size="2">&nbsp;<img src="img/Dir.gif"> 
+                          install_modules<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/Dir.gif"> 
+                          Archive<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/Dir.gif"> 
+                          Compress<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/txt.gif"> 
+                          Zlib.pm<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/html.gif"> 
+                          index.html<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/txt.gif"> 
+                          Tar.pm<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/txt.gif"> 
+                          admin.pl<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/txt.gif"> 
+                          database.pl<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/txt.gif"> 
+                          populate.pl<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/txt.gif"> 
+                          start.pl<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/txt.gif"> 
+                          tar.pl<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/txt.gif"> 
+                          functions.pm<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/Dir.gif"> 
+                          Languages<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                          <img src="img/html.gif"> index.html <br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/Dir.gif"> 
+                          OUTGOING<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                          <img src="img/html.gif"> index.html <br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/Dir.gif"> 
+                          Skin<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                          <img src="img/html.gif"> index.html <br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/Dir.gif"> 
+                          Sources<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                          <img src="img/html.gif"> index.html <br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/txt.gif"> 
+                          ikonboard.cgi<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/txt.gif"> 
+                          installer.cgi<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/txt.gif"> 
+                          ikonboard.conf<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/html.gif"> 
+                          index.html<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/tar.gif"> 
+                          Data.tar<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/tar.gif"> 
+                          Database.tar<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/tar.gif"> 
+                          Languages.tar<br>
+                          </font></p>
+                        <p><font face="Verdana" size="1"> (continued next column)</font></p></td>
+                      <td valign="top" width="25%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="Verdana" size="2"><img src="img/tar.gif"> 
+                        non-cgi.tar<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/tar.gif"> 
+                        Skin.tar<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/tar.gif"> 
+                        Sources.tar<br>
+                        <img src="img/Dir.gif"> iB_html<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/Dir.gif"> 
+                        uploads<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                        <img src="img/html.gif"> index.html <br>
+                        </font> </td>
+                      <td rowspan="2" width="25%" valign="top"> <p><font color="#3C2466"><b>Upload 
+                          Types :</b></font></p>
+                        <p><a name="ASCII2"></a><font face="Verdana" size="2">The 
+                          following files must be uploaded in (<a href="Glossary.html#ASCII"><img src="img/aq.gif" width="9" height="11" border="0"></a>) 
+                          ASCII mode :</font></p>
+                        <p><font color="#006A35" size="2" face="Verdana">*.html<br>
+                          *.dat<br>
+                          *.txt<br>
+                          *.pm<br>
+                          *.pl<br>
+                          *.cgi<br>
+                          *.conf</font></p>
+                        <p><br>
+                        </p>
+                        <p><a name="Binary2"></a><font face="Verdana" size="2">The 
+                          following file types must be uploaded in (<a href="Glossary.html#Binary"><img src="img/aq.gif" width="9" height="11" border="0"></a>) 
+                          binary mode :</font></p>
+                        <p><font color="#004080" size="2" face="Verdana">*.tar</font><br>
+                          <br>
+                          <br>
+                          NOTE :<font face="Verdana" size="1"> <i>If your FTP 
+                          client allows for auto-detect, this is usually the safe 
+                          way to go, though you may wish to check for your own 
+                          benefit to make sure that it does upload the files listed 
+                          above in ASCII format, or you may have problems with 
+                          your board.</i></font></p></td>
+                    </tr>
+                    <tr> 
+                      <td valign="middle"> <p><b><font color="#3C2466" size="2" face="Verdana">Legend</font></b></p>
+                        <p><font face="Verdana" size="2"><img src="img/Dir.gif" width="14" height="12"> 
+                          Directory (folder)</font></p>
+                        <p><font face="Verdana" size="2"><img src="img/html.gif" width="12" height="14"> 
+                          html document</font></p>
+                        <p><font face="Verdana" size="2"><img src="img/misc.gif" width="11" height="14"> 
+                          undefined file type</font></p>
+                        <p><font face="Verdana" size="2"><img src="img/tar.gif" width="14" height="10"> 
+                          tar file</font></p>
+                        <p><font face="Verdana" size="2"><img src="img/txt.gif" width="11" height="14"> 
+                          text type document</font></p>
+                        <p><font face="Verdana" size="2"><img src="img/txt2.gif" width="12" height="14"> 
+                          text file</font></p></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="2"><img src="img/spacer.gif" alt="" width="750" height="1"></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!--DWLayoutTable-->
+  <tr> 
+    <td height="19" align="left" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+  </tr>
+  <tr> 
+    <td height="19" align="left" valign="top"><table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="26" align="center" valign="middle" bordercolor="#000099" background="img/bluebk.jpg" bgcolor="#4898E0"><font color="#FFFFFF" size="3" face="Verdana, Arial, Helvetica, sans-serif"><strong>For 
+            Windows </strong></font></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="227" align="left" valign="top"> 
+      <table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="225" align="center" valign="top" bordercolor="#000099" bgcolor="#FFFFFF"> 
+            <table width="98%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td height="204" align="right" valign="top"> 
+                  <table width="96%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td width="6%" align="left" valign="top"><font face="Verdana" size="2"><img src="img/bullet.gif" width="10" height="11"></font></td>
+                      <td width="94%" align="left" valign="top"><font face="Verdana"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">You 
+                        will probably need to rename your *.cgi files to have 
+                        the extension *.pl. The majority of windows servers only 
+                        run pl files.</font></font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td align="left" valign="top">&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td align="left" valign="top"><font face="Verdana" size="2"><img src="img/bullet.gif" width="10" height="11"></font></td>
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">CHMOD 
+                        settings have no effect. Select all the files (including 
+                        directories) in your ftp client and upload them into your 
+                        cgi-bin folder on your server. (To see how to select multiple 
+                        files, look <a href="#smf">here</a>.)</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td align="left" valign="top">&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td align="left" valign="top"><font face="Verdana" size="2"><img src="img/bullet.gif" width="10" height="11"></font></td>
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">Select 
+                        the iB_html folder and upload it into the place where 
+                        your webpages go. This is likely to be either public_html, 
+                        www, or httpdocs folder.</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td align="left" valign="top">&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td align="left" valign="top"><font face="Verdana" size="2"><img src="img/bullet.gif" width="10" height="11"></font></td>
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">Point 
+                        your browser window to the location of the installer.pl 
+                        or installer.cgi file and walk through the installation. 
+                        Further assistance for this process can be found in the 
+                        <a href="Installer_Guide.html">Installer Guide</a>.</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="2"><img src="../! kellycamo/spacer.gif" alt="" width="750" height="1"></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!--DWLayoutTable-->
+  <tr> 
+    <td height="19" align="left" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+  </tr>
+  <tr> 
+    <td height="19" align="left" valign="top"><table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="26" align="center" valign="middle" bordercolor="#000099" background="img/bluebk.jpg" bgcolor="#4898E0"><font color="#FFFFFF" size="3" face="Verdana, Arial, Helvetica, sans-serif"><strong>For 
+            Unix/Linux </strong></font></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="669" align="left" valign="top"> 
+      <table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="667" align="center" valign="top" bordercolor="#000099" bgcolor="#FFFFFF"> 
+            <table width="98%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="560" align="right" valign="top"> 
+                  <table width="96%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td width="6%" align="left" valign="top"><font face="Verdana" size="2"><img src="img/bullet.gif" width="10" height="11"></font></td>
+                      <td width="94%" align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">If 
+                        you are using multiple cgi scripts on your server, you 
+                        may wish to make a folder inside your cgi-bin just for 
+                        ikonboard. The names &quot;forums&quot;, &quot;boards&quot;, 
+                        &quot;ib3&quot; are a few examples of what you might name 
+                        that folder. If you make one, CHMOD it to 755.</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td align="left" valign="top">&nbsp;</td>
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td align="left" valign="top"><font face="Verdana" size="2"><img src="img/bullet.gif" width="10" height="11"></font></td>
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">Select 
+                        all the files in the cgi-bin folder of your hard drive 
+                        and upload them into the cgi-bin of your server. All your 
+                        files, including those inside other folders will be uploaded 
+                        into the correct place. (Most FTP programs do support 
+                        uploading of a number of files together, if yours does 
+                        not, make certain that you upload ALL files exactly as 
+                        show in the directory tree above. <a name="smf"></a>To 
+                        select multiple files, you can a) select the top file, 
+                        hold down your shift key and select the bottom file or 
+                        b) select the top file, hold down control and select each 
+                        additional file individually or c) use a combination of 
+                        the two.)</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td align="left" valign="top">&nbsp;</td>
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td align="left" valign="top"><font face="Verdana" size="2"><img src="img/bullet.gif" width="10" height="11"></font></td>
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif"><a name="tar2"></a>Select 
+                        all the folders on your server that you just uploaded 
+                        (the ones in the cgi-bin), the 6 (<a href="Glossary.html#tar"><img src="img/aq.gif" width="9" height="11" border="0"></a>) 
+                        tar files and the ikonboard.conf files and CHMOD them 
+                        to 777. (Most FTP programs support this. If you cannot 
+                        select multiple files, then do them individually.)</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td align="left" valign="top">&nbsp;</td>
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td height="16" align="left" valign="top"><font face="Verdana" size="2"><img src="img/bullet.gif" width="10" height="11"></font></td>
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">Select 
+                        the three cgi files (ikonboard.cgi, perl_test.cgi &amp; 
+                        installer.cgi) and CHMOD them to 755.</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td height="19" align="left" valign="top">&nbsp;</td>
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td height="19" align="left" valign="top"><font face="Verdana" size="2"><img src="img/bullet.gif" width="10" height="11"></font></td>
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">Navigate 
+                        into the INSTALL_DATA folder. Select all files inside 
+                        and CHMOD them to 777.*</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td height="19" align="left" valign="top">&nbsp;</td>
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td height="19" align="left" valign="top"><font face="Verdana" size="2"><img src="img/bullet.gif" width="10" height="11"></font></td>
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">Navigate 
+                        into the install_modules directory. Highlight everything 
+                        inside it and CHMOD to 777.*</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td height="19" align="left" valign="top">&nbsp;</td>
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td height="19" align="left" valign="top"><font face="Verdana" size="2"><img src="img/bullet.gif" width="10" height="11"></font></td>
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">Navigate 
+                        into the area where your html files are stored. This will 
+                        be something like public_html, www, or httpdocs.</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td height="19" align="left" valign="top">&nbsp;</td>
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td height="19" align="left" valign="top"><font face="Verdana" size="2"><img src="img/bullet.gif" width="10" height="11"></font></td>
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">Select 
+                        the iB_html folder on your hard drive and upload it into 
+                        the html area of your web server.</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td height="19" align="left" valign="top">&nbsp;</td>
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td height="19" align="left" valign="top"><font face="Verdana" size="2"><img src="img/bullet.gif" width="10" height="11"></font></td>
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">Highlight 
+                        the iB_html folder and CHMOD it to 777.*</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td height="19" align="left" valign="top">&nbsp;</td>
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td height="32" align="left" valign="top"><font face="Verdana" size="2"><img src="img/bullet.gif" width="10" height="11"></font></td>
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">Navigate inside your iB_html folder. 
+                        Select the directories inside it (uploads and non-cgi) 
+                        and CHMOD them to 777.*</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td height="19" align="left" valign="top">&nbsp;</td>
+                      <td><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td align="left" valign="top"> 
+                  <p><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">*Note some Apache servers will 
+                    only execute chmod 755</font></p> <p><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">You 
+                    have now completed uploading and setting permissions on all 
+                    the necessary files. Now you are ready to run the installer. 
+                    For a walk-through guide, please go to the <a href="Installer_Guide.html">Installer 
+                    Guide</a>.</font></p>
+    </td>
+              </tr>
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="2"><img src="img/spacer.gif" alt="" width="750" height="1"></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!--DWLayoutTable-->
+  <tr> 
+    <td height="19" align="left" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+  </tr>
+  <tr> 
+    <td height="19" align="left" valign="top"><table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="26" align="center" valign="middle" bordercolor="#000099" background="img/bluebk.jpg" bgcolor="#4898E0"><font color="#FFFFFF" size="3" face="Verdana, Arial, Helvetica, sans-serif"><strong>Credit</strong></font></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="122" align="left" valign="top"> 
+      <table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="120" align="center" valign="top" bordercolor="#000099" bgcolor="#FFFFFF"> 
+            <div align="center"><font face="Verdana" size="2"> <br>
+              	(c) 2018 Implux Designs Inc.</font></div>
+			<p> 
+            <br>
+          </td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="2"><img src="img/spacer.gif" alt="" width="750" height="1"></td>
+  </tr>
+</table>
+</body>
+</html>

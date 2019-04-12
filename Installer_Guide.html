@@ -1,0 +1,874 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Ikonboard 3.1.5 Installer Guide</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#DFE6EF">
+<!-- This CSS code causes text links to change colour on mouseover xxxxxxxxxxxxxxxxxxxxxxxx -->
+<STYLE TYPE="text/css">
+A, A:link, A:visited, A.hoversense:link, A.hoversense:visited { color: #0000CC }
+A:hover { color: #FF0000 }
+</STYLE>
+<!-------------------------------------------------------------------------------------------->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!--DWLayoutTable-->
+  <tr> 
+    <td height="63" align="center" valign="top"> 
+      <table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#000099" bgcolor="#FFFFFF">
+        <tr>
+          <td height="60" align="center" valign="top" bordercolor="#4898E0" background="img/bluebk2.gif" bgcolor="#4898E0"><font color="#FFFFFF" size="5" face="Verdana, Arial, Helvetica, sans-serif"><strong>Ikonboard 
+            - version 3.1.5A<br>
+            Installer Guide</strong></font></td>
+        </tr>
+      </table>
+      <img src="../! kellycamo/spacer.gif" alt="" width="750" height="1"> </td>
+  </tr>
+  <tr> 
+    <td height="2"><img src="img/spacer.gif" alt="" width="750" height="1"></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!--DWLayoutTable-->
+  <tr>
+    <td height="19" align="left" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+  </tr>
+  <tr> 
+    <td height="19" align="left" valign="top"><table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="26" align="center" valign="middle" bordercolor="#000099" background="img/bluebk.jpg" bgcolor="#4898E0"><font color="#FFFFFF" size="3" face="Verdana, Arial, Helvetica, sans-serif"><strong>Welcome</strong></font></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="90" align="left" valign="top"> 
+      <table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="88" align="center" valign="top" bordercolor="#000099" bgcolor="#FFFFFF"> 
+            <table width="98%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td height="19" align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+              </tr>
+              <tr> 
+                <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">This 
+                  guide is designed to help walk you through the automatic installer 
+                  offered for this program. &nbsp; Please pay careful attention 
+                  to the notes made, as well as markings on the images that are 
+                  there to help indicate what you need to do for a successful 
+                  install.&nbsp; For file size reasons, all screenshots have been 
+                  sized down.</font></td>
+              </tr>
+              <tr> 
+                <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="2"><img src="img/spacer.gif" alt="" width="1" height="1"><img src="img/spacer.gif" alt="" width="750" height="1"></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!--DWLayoutTable-->
+  <tr>
+    <td height="19" align="left" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+  </tr>
+  <tr> 
+    <td height="19" align="left" valign="top"><table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="26" align="center" valign="middle" bordercolor="#000099" background="img/bluebk.jpg" bgcolor="#4898E0"><font color="#000099" size="2" face="Verdana, Arial, Helvetica, sans-serif"><b><font color="#FFFFFF" size="3">Step 
+            1 </font></b></font></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="381" align="left" valign="top"> 
+      <table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="379" align="right" valign="top" bordercolor="#000099" bgcolor="#FFFFFF"> 
+            <table width="98%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td height="19" align="left" valign="top">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">If 
+                  you have CHMOD all your files correctly and your iB_html is 
+                  NOT in your cgi-bin, and you are ready to proceed, then you 
+                  should have pulled up the URL for your installer.cgi or .pl 
+                  file. The following screenshots were taken on a UNIX server, 
+                  though all basic installations should be virtually the same. 
+                  When you pull up the URL for the installer file, you should 
+                  see the screen below. If there is a No next to the MySQL query, 
+                  but yes to the others, you may proceed with installation. You 
+                  should see something similar to the picture below. The only 
+                  one allowed to say no is marked so you can see.</font></td>
+              </tr>
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td align="center" valign="top"><img src="img/SystemProfiler.jpg" width="451" height="224"></td>
+              </tr>
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="2"><img src="img/spacer.gif" alt="" width="750" height="1"></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!--DWLayoutTable-->
+  <tr> 
+    <td height="19" align="left" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+  </tr>
+  <tr> 
+    <td height="19" align="left" valign="top"><table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="26" align="center" valign="middle" bordercolor="#000099" background="img/bluebk.jpg" bgcolor="#4898E0"><font color="#FFFFFF" size="3" face="Verdana, Arial, Helvetica, sans-serif"><strong>Step 
+            2</strong></font></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="940" align="left" valign="top"> 
+      <table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="939" align="center" valign="top" bordercolor="#000099" bgcolor="#FFFFFF"> 
+            <table width="98%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td height="19" align="left" valign="top"> <p><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">This 
+                    is where the majority of people make the most mistakes, so 
+                    please read this information VERY carefully and refer to the 
+                    screenshot below for clarification if necessary.</font></p></td>
+              </tr>
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td height="469" align="center" valign="top"> <table width="96%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td width="6%" align="left" valign="top"><font face="Verdana" size="2"><img src="img/bullet.gif" width="10" height="11"></font></td>
+                      <td width="94%" align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">Your 
+                        CGI Path is the path found by the test file. It can also 
+                        be found by installing and running the perl_test.cgi script. 
+                        This will be the server path to the CGI directory. This 
+                        cannot be an URL and it should not have a / at the end 
+                        of it.</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td align="left" valign="top">&nbsp;</td>
+                      <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td align="left" valign="top"><font face="Verdana" size="2"><img src="img/bullet.gif" width="10" height="11"></font></td>
+                      <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">Your 
+                        non-cgi Path is the path to the html directory of your 
+                        site leading to the iB_html directory. On many servers 
+                        this path can be found by simply removing /cgi-bin from 
+                        the path line and whatever folder you've put the CGI part 
+                        of your board in. In the example below, you would remove 
+                        the /cgi-bin/boards from the path to get the non-CGI path.</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td align="left" valign="top">&nbsp;</td>
+                      <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td align="left" valign="top"><font face="Verdana" size="2"><img src="img/bullet.gif" width="10" height="11"></font></td>
+                      <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">Your 
+                        CGI URL is the web address that you would use to access 
+                        the directory that your ikonboard have been installed 
+                        into. This WILL contain the cgi-bin folder in the address.</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td align="left" valign="top">&nbsp;</td>
+                      <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td align="left" valign="top"><font face="Verdana" size="2"><img src="img/bullet.gif" width="10" height="11"></font></td>
+                      <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">Your 
+                        non-CGI URL is the web address that you would use to access 
+                        the directory that your ikonboard's iB_html directory 
+                        has been installed into. This will NOT contain the cgi-bin 
+                        folder in the address.</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td align="left" valign="top">&nbsp;</td>
+                      <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td align="left" valign="top"><font face="Verdana" size="2"><img src="img/bullet.gif" width="10" height="11"></font></td>
+                      <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">Incoming 
+                        and outgoing email addresses are basically addresses that 
+                        will show up in outgoing and incoming email from/to the 
+                        board itself. Many people do not change this information, 
+                        or simply change the domain name.</font></td>
+                    </tr>
+                    <tr> 
+                      <td align="left" valign="top">&nbsp;</td>
+                      <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+                    </tr>
+                    <tr> 
+                      <td align="left" valign="top"><font face="Verdana" size="2"><img src="img/bullet.gif" width="10" height="11"></font></td>
+                      <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">If 
+                        you're on a UNIX machine, more than likely you will use 
+                        Send Mail. Typically Windows servers will use STMP mail, 
+                        though that can also work on many UNIX servers if you 
+                        own your own domain. The Send Mail path is the path that 
+                        we found on the perl_test.cgi script. If you are using 
+                        STMP, you will need to enter the correct address. Many 
+                        times this is similar to mail.yourdomain.com.</font></td>
+                    </tr>
+                    <tr> 
+                      <td align="left" valign="top">&nbsp;</td>
+                      <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+                    </tr>
+                    <tr> 
+                      <td align="left" valign="top"><font face="Verdana" size="2"><img src="img/bullet.gif" width="10" height="11"></font></td>
+                      <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">Enter 
+                        your website name, then your Board's Name, a description 
+                        and the URL to the main part of your website and then 
+                        you're ready to proceed.</font></td>
+                    </tr>
+                    <tr> 
+                      <td align="left" valign="top">&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr> 
+                <td align="center" valign="top"><table width="564" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td width="564" align="center" valign="top"><img src="img/Image8_1x1.jpg" width="188" height="134"><img src="img/Image8_1x2.jpg" width="188" height="134"><img src="img/Image8_1x3.jpg" width="188" height="134"><img src="img/Image8_2x1.jpg" width="188" height="135"><img src="img/Image8_2x2.jpg" width="188" height="135"><img src="img/Image8_2x3.jpg" width="188" height="135"><img src="img/Image8_3x1.jpg" width="188" height="135"><img src="img/Image8_3x2.jpg" width="188" height="135"><img src="img/Image8_3x3.jpg" width="188" height="135"></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="2"><img src="img/spacer.gif" alt="" width="750" height="1"></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!--DWLayoutTable-->
+  <tr> 
+    <td height="19" align="left" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+  </tr>
+  <tr> 
+    <td height="19" align="left" valign="top"><table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="26" align="center" valign="middle" bordercolor="#000099" background="img/bluebk.jpg" bgcolor="#4898E0"><font color="#000000" size="3" face="Verdana, Arial, Helvetica, sans-serif"><strong><font color="#FFFFFF">Step 
+            3 </font></strong></font><font color="#FFFFFF" size="3" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="418" align="left" valign="top"> 
+      <table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="416" align="center" valign="top" bordercolor="#000099" bgcolor="#FFFFFF"> 
+            <table width="98%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td height="19" align="left" valign="top"><font face="Verdana" size="2">This 
+                  screen basically confirms or denies that your directories exist 
+                  and are able to be written to.</font></td>
+              </tr>
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td height="83" align="center" valign="top"> <table width="96%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td width="6%" height="64" align="left" valign="top"><font face="Verdana" size="2"><img src="img/bullet.gif" width="10" height="11"></font></td>
+                      <td width="94%" align="left" valign="top"><p><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">If 
+                          any of the answers here is no, you need to go back and 
+                          check what it says is wrong. Missing directories/files 
+                          need to be put up and CHMOD settings must be correct 
+                          (on UNIX servers) to continue. Once you've corrected 
+                          any errors, hit refresh and make sure all answers are 
+                          yes to proceed.</font></p></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td align="left" valign="top">&nbsp;</td>
+                      <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr> 
+                <td align="center" valign="top"><img src="img/Installation1.jpg" width="489" height="255"></td>
+              </tr>
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="2"><img src="img/spacer.gif" alt="" width="750" height="1"></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!--DWLayoutTable-->
+  <tr> 
+    <td height="19" align="left" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+  </tr>
+  <tr> 
+    <td height="19" align="left" valign="top"><table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="26" align="center" valign="middle" bordercolor="#000099" background="img/bluebk.jpg" bgcolor="#4898E0"><font size="+1" color="#8C2631"><font color="#FFFFFF" size="3" face="Verdana, Arial, Helvetica, sans-serif"><strong>Step 
+            4</strong></font></font></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="398" align="left" valign="top"> 
+      <table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="396" align="right" valign="top" bordercolor="#000099" bgcolor="#FFFFFF"> 
+            <table width="98%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td align="left" valign="top">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">This 
+                  screen basically confirms or denies that additional necessary 
+                  directories exist and are able to be written to.</font></td>
+              </tr>
+              <tr> 
+                <td height="19" align="left" valign="top"> <p>&nbsp;</p></td>
+              </tr>
+              <tr> 
+                <td align="center" valign="top"><table width="96%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td width="6%" height="64" align="left" valign="top"><font face="Verdana" size="2"><img src="img/bullet.gif" width="10" height="11"></font></td>
+                      <td width="94%" align="left" valign="top"><p><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">If 
+                          any of the answers here are no, you need to go back 
+                          and check what it says is wrong. Missing directories/files 
+                          need to be put up and CHMOD settings must be correct 
+                          (on UNIX servers) to continue. Once you've corrected 
+                          any errors, hit refresh and make sure all answers are 
+                          yes to proceed.</font></p></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td align="left" valign="top">&nbsp;</td>
+                      <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr> 
+                <td align="center" valign="top"><img src="img/Installation2.jpg" width="489" height="222"></td>
+              </tr>
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="2"><img src="img/spacer.gif" alt="" width="750" height="1"></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!--DWLayoutTable-->
+  <tr> 
+    <td height="19" align="left" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+  </tr>
+  <tr> 
+    <td height="19" align="left" valign="top"><table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="26" align="center" valign="middle" bordercolor="#000099" background="img/bluebk.jpg" bgcolor="#4898E0"><font size="+1" color="#8C2631"><font color="#FFFFFF" size="3" face="Verdana, Arial, Helvetica, sans-serif"><strong>Step 
+            5 </strong></font></font></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="42" align="left" valign="top"> 
+      <table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="267" align="center" valign="top" bordercolor="#000099" bgcolor="#FFFFFF"> 
+            <table width="98%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">Now, 
+                  depending on your server, you will either have the installer 
+                  extract the files from the tar archives or you may have untarred 
+                  the tar files and have uploaded all files manually. Most people 
+                  will have the installer extract the tar archives.</font></td>
+              </tr>
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="19" align="center" valign="top"><img src="img/Extract.jpg" width="489" height="147"></td>
+              </tr>
+              <tr> 
+                <td height="19" align="center" valign="top"><img src="../! kellycamo/spacer.gif" alt="" width="750" height="1"> 
+                </td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="2"><img src="img/spacer.gif" alt="" width="750" height="1"></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!--DWLayoutTable-->
+  <tr> 
+    <td height="19" align="left" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+  </tr>
+  <tr> 
+    <td height="19" align="left" valign="top"><table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="26" align="center" valign="middle" bordercolor="#000099" background="img/bluebk.jpg" bgcolor="#4898E0"><font size="+1" color="#8C2631"><font color="#FFFFFF" size="3" face="Verdana, Arial, Helvetica, sans-serif"><strong>Step 
+            6 </strong></font></font></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="42" align="left" valign="top"> <table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="40" align="center" valign="top" bordercolor="#000099" bgcolor="#FFFFFF"> 
+            <table width="98%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td align="center" valign="top"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">This 
+                  section will ask you if you wish to remove old files before 
+                  installing new<br>
+                  <b>It will also delete old skin and database files when both 
+                  are set to yes</b><br>
+                  <font color="#FF0000"><b>IMPORTANT</b> </font>If this is a <b><font color="#FF0000">Brand 
+                  New Install</font></b> Leave both dropdowns set to <b><font color="#FF0000">YES</font></B></font></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td align="center" valign="top"><img src="img/Select.jpg" width="489" height="321"></td>
+              </tr>
+              <tr> 
+                <td height="19" align="right" valign="top">&nbsp; </td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="2"><img src="../! kellycamo/spacer.gif" alt="" width="750" height="1"></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!--DWLayoutTable-->
+  <tr> 
+    <td height="19" align="left" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+  </tr>
+  <tr> 
+    <td height="19" align="left" valign="top"><table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="26" align="center" valign="middle" bordercolor="#000099" background="img/bluebk.jpg" bgcolor="#4898E0"><font size="+1" color="#8C2631"><font color="#FFFFFF" size="3" face="Verdana, Arial, Helvetica, sans-serif"><strong>Step 
+            7 </strong></font></font></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="42" align="left" valign="top"> <table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="40" align="center" valign="top" bordercolor="#000099" bgcolor="#FFFFFF"> 
+            <table width="98%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">This 
+                  is where you select your database. A majority of users will 
+                  simply leave the default DBM Database as the choice and proceed. 
+                  You can upgrade to other databases later on if your host provides 
+                  it should you change your mind or have a very large, active 
+                  </font><font face="Verdana, Arial, Helvetica, sans-serif" size="2">board.</font></td>
+              </tr>
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td align="center" valign="top"><img src="img/Database.jpg" width="489" height="120"></td>
+              </tr>
+              <tr> 
+                <td height="19" align="right" valign="top">&nbsp; </td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="2"><img src="../! kellycamo/spacer.gif" alt="" width="750" height="1"></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!--DWLayoutTable-->
+  <tr> 
+    <td height="19" align="left" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+  </tr>
+  <tr> 
+    <td height="19" align="left" valign="top"><table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="26" align="center" valign="middle" bordercolor="#000099" background="img/bluebk.jpg" bgcolor="#4898E0"><font size="+1" color="#8C2631"><font color="#FFFFFF" size="3" face="Verdana, Arial, Helvetica, sans-serif"><strong>Step 
+            8 </strong></font></font></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="80" align="left" valign="top"> 
+      <table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="78" align="center" valign="top" bordercolor="#000099" bgcolor="#FFFFFF"> 
+            <table width="98%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">Confirming 
+                  the setup of the chosen database has been completed. Proceed.</font> 
+                </td>
+              </tr>
+              <tr>
+                <td height="19" align="left" valign="top">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td height="19" align="center" valign="top"> <p><img src="img/DBComplete.jpg" width="489" height="111"></p></td>
+              </tr>
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="2"><img src="img/spacer.gif" alt="" width="750" height="1"></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!--DWLayoutTable-->
+  <tr> 
+    <td height="19" align="left" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+  </tr>
+  <tr> 
+    <td height="19" align="left" valign="top"><table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="26" align="center" valign="middle" bordercolor="#000099" background="img/bluebk.jpg" bgcolor="#4898E0"><font size="+1" color="#8C2631"><font color="#FFFFFF" size="3" face="Verdana, Arial, Helvetica, sans-serif"><strong>Step 
+            9 </strong></font></font></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="42" align="left" valign="top"> <table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="40" align="center" valign="top" bordercolor="#000099" bgcolor="#FFFFFF"> 
+            <table width="98%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">Letting 
+                  you know the installer is about to populate the database with 
+                  the necessary information to run ikonboard.</font></td>
+              </tr>
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td align="center" valign="top"><img src="img/Populate.jpg" width="489" height="102"></td>
+              </tr>
+              <tr> 
+                <td height="19" align="right" valign="top">&nbsp; </td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="2"><img src="../! kellycamo/spacer.gif" alt="" width="750" height="1"></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!--DWLayoutTable-->
+  <tr> 
+    <td height="19" align="left" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+  </tr>
+  <tr> 
+    <td height="19" align="left" valign="top"><table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="26" align="center" valign="middle" bordercolor="#000099" background="img/bluebk.jpg" bgcolor="#4898E0"><font size="+1" color="#8C2631"><font color="#FFFFFF" size="3" face="Verdana, Arial, Helvetica, sans-serif"><strong>Step 
+            10 </strong></font></font></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="42" align="left" valign="top"> <table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="40" align="center" valign="top" bordercolor="#000099" bgcolor="#FFFFFF"> 
+            <table width="98%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">Confirming 
+                  the population has been completed.</font></td>
+              </tr>
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td align="center" valign="top"><img src="img/PopComplete.jpg" width="489" height="111"></td>
+              </tr>
+              <tr> 
+                <td height="19" align="right" valign="top">&nbsp; </td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="2"><img src="../! kellycamo/spacer.gif" alt="" width="750" height="1"></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!--DWLayoutTable-->
+  <tr> 
+    <td height="19" align="left" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+  </tr>
+  <tr> 
+    <td height="19" align="left" valign="top"><table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="26" align="center" valign="middle" bordercolor="#000099" background="img/bluebk.jpg" bgcolor="#4898E0"><font size="+1" color="#8C2631"><font color="#FFFFFF" size="3" face="Verdana, Arial, Helvetica, sans-serif"><strong>Step 
+            11 </strong></font></font></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="42" align="left" valign="top"> <table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="379" align="center" valign="top" bordercolor="#000099" bgcolor="#FFFFFF"> 
+            <table width="98%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">This 
+                  is where you create your &quot;Master&quot; account or Super 
+                  Administrator.</font> </td>
+              </tr>
+              <tr> 
+                <td align="center" valign="top"><table width="96%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td height="19" align="left" valign="top">&nbsp;</td>
+                      <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+                    </tr>
+                    <tr> 
+                      <td height="19" align="left" valign="top"><font face="Verdana" size="2"><img src="img/bullet.gif" width="10" height="11"></font></td>
+                      <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">Decide 
+                        what name you wish to use.</font></td>
+                    </tr>
+                    <tr> 
+                      <td height="19" align="left" valign="top">&nbsp;</td>
+                      <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+                    </tr>
+                    <tr> 
+                      <td height="19" align="left" valign="top"><font face="Verdana" size="2"><img src="img/bullet.gif" width="10" height="11"></font></td>
+                      <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">Pick 
+                        a password that has at least 5 characters. Larger, complex 
+                        passwords are highly recommended to prevent someone hacking 
+                        into your board. Confirm your password in the next field.</font></td>
+                    </tr>
+                    <tr> 
+                      <td height="19" align="left" valign="top">&nbsp;</td>
+                      <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+                    </tr>
+                    <tr> 
+                      <td width="6%" height="19" align="left" valign="top"><font face="Verdana" size="2"><img src="img/bullet.gif" width="10" height="11"></font></td>
+                      <td width="94%" align="left" valign="top"><p><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">Enter 
+                          a valid email address for yourself in the last two fields.</font></p></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td align="left" valign="top">&nbsp;</td>
+                      <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr> 
+                <td align="center" valign="top"><img src="img/CreateAdmin.jpg" width="489" height="196"></td>
+              </tr>
+              <tr> 
+                <td height="19" align="right" valign="top">&nbsp; </td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="2"><img src="../! kellycamo/spacer.gif" alt="" width="750" height="1"></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!--DWLayoutTable-->
+  <tr> 
+    <td height="19" align="left" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+  </tr>
+  <tr> 
+    <td height="19" align="left" valign="top"><table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="26" align="center" valign="middle" bordercolor="#000099" background="img/bluebk.jpg" bgcolor="#4898E0"><font size="+1" color="#8C2631"><font color="#FFFFFF" size="3" face="Verdana, Arial, Helvetica, sans-serif"><strong>Step 
+            12 </strong></font></font></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="42" align="left" valign="top"> <table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="40" align="center" valign="top" bordercolor="#000099" bgcolor="#FFFFFF"> 
+            <table width="98%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">This 
+                  confirms the Administrator account has been created.</font></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td align="center" valign="top"><img src="img/AdminCreated.jpg" width="489" height="171"></td>
+              </tr>
+              <tr> 
+                <td height="19" align="right" valign="top">&nbsp; </td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="2"><img src="../! kellycamo/spacer.gif" alt="" width="750" height="1"></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!--DWLayoutTable-->
+  <tr> 
+    <td height="19" align="left" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+  </tr>
+  <tr> 
+    <td height="19" align="left" valign="top"><table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="26" align="center" valign="middle" bordercolor="#000099" background="img/bluebk.jpg" bgcolor="#4898E0"><font color="#FFFFFF" size="3" face="Verdana, Arial, Helvetica, sans-serif"><strong>Step 
+            13 </strong></font></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="370" align="left" valign="top"> 
+      <table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="362" align="center" valign="top" bordercolor="#000099" bgcolor="#FFFFFF"> 
+            <table width="98%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">Installation 
+                  has been completed. You will now either be taken to your board 
+                  or you will see an error like below. Either way, you have had 
+                  a succe</font><font face="Verdana" size="2">ssful installation.</font></td>
+              </tr>
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td align="center" valign="top"><table width="96%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td width="6%" height="64" align="left" valign="top"><font face="Verdana" size="2"><img src="img/bullet.gif" width="10" height="11"></font></td>
+                      <td width="94%" align="left" valign="top"><p><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">Once 
+                          you have completed the installation, you need to delete 
+                          out installer.cgi/pl from your server. Sometimes an 
+                          installer.lck or lock will appear in that directory. 
+                          That is for your protection until you've had the chance 
+                          to delete the installer from your server. Both files 
+                          may now be deleted if you have gotten to this stage. 
+                          The 6 tar files may now also be deleted from your server, 
+                          as they have performed their function and are no longer 
+                          necessary.</font> </p></td>
+                    </tr>
+                    <tr align="left" valign="top"> 
+                      <td align="left" valign="top">&nbsp;</td>
+                      <td align="left" valign="top"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr> 
+                <td align="center" valign="top"><img src="img/cgi.jpg" width="382" height="188" border="1"></td>
+              </tr>
+              <tr> 
+                <td height="19" align="right" valign="top">&nbsp; </td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="2"><img src="../! kellycamo/spacer.gif" alt="" width="750" height="1"></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!--DWLayoutTable-->
+  <tr> 
+    <td height="19" align="left" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+  </tr>
+  <tr> 
+    <td height="19" align="left" valign="top"><table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="26" align="center" valign="middle" bordercolor="#000099" background="img/bluebk.jpg" bgcolor="#4898E0"><font color="#FFFFFF" size="3" face="Verdana, Arial, Helvetica, sans-serif"><strong>Credit</strong></font></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="122" align="left" valign="top"> 
+      <table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E0E8F0">
+        <tr> 
+          <td height="120" align="center" valign="top" bordercolor="#000099" bgcolor="#FFFFFF"> 
+            <div align="center"><font face="Verdana" size="2"> <br>
+              &nbsp;</font></div>
+			<p><font face="Verdana" size="2">(c) 2018 Implux Designs Inc.</font><br>
+          </td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="2"><img src="img/spacer.gif" alt="" width="750" height="1"></td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <title>Ikonboard Upgrade Instructions</title>
+  <style>
+  body {
+  background-color:#DFE6EF;
+  }
+  
+  #content {
+  background-color:#FFFFFF;
+  border: 1px solid black;
+  margin:3em;
+  padding:8px;
+  }
+  
+  
+  #title {
+  font-size:20pt;
+  font-weight:bold;
+  color:navy;
+  padding-top:4px;
+  }
+  
+  .warn {
+   color: red;
+   font-weight:bold;
+   }
+   
+   h3 {
+   font-weight:bold;
+   text-decoration:underline;
+   }
+   
+   .mode {
+   color:red;
+   }
+   
+   .lite {
+   font-weight:bold;
+   text-decoration:underline;
+   }
+  </style>
+</head>
+<body>
+<div id="content">
+<img src="images/logo.gif" width="304" height="113" alt="" border="0" align="">
+<span id="title">v3.1.2 to v3.1.3 Upgrade Instructions</span>
+<br><br clear="all"><br>
+<span class="warn">***WARNING - BACKUP YOUR BOARD DATABASE BEFORE YOU BEGIN! ***
+</span><br>
+(AdminCP>Database>Export Database)
+<br><br>
+<h3>Step 1. Uploading Files.</h3> 
+<br>
+    From the 3.1.3 dowload upload the following files.... 
+    <ol>
+        <li> installer.cgi       (upload in <span class="mode">ASCII</span>- chmod to 755)</li>
+        <li> ikonboard.cgi       (upload in <span class="mode">ASCII</span>- chmod to 755) </li>     
+        <li> ikonboard.conf      (upload in <span class="mode">ASCII</span>- chmod to 755)</li>
+        <li> index.html          (upload in <span class="mode">ASCII</span>- chmod to 755)</li>
+        <li> INSTALL_DATA folder and all its contents. (upload in <span class="mode">ASCII</span>- all the files chmod to 755 )</li>
+        <li> install_modules folder and all it's contents. (upload in <span class="mode">ASCII</span>- all the files chmod to 755 )</li>
+        <li> Data.tar            (upload in <span class="mode">BINARY</span>- chmod to 755)</li>
+        <li> Database.tar        (upload in <span class="mode">BINARY</span>- chmod to 755)</li>
+        <li> Languages.tar       (upload in <span class="mode">BINARY</span>- chmod to 755)</li>
+        <li> non-cgi.tar        (upload in <span class="mode">BINARY</span>- chmod to 755)</li>
+        <li> Skin.tar           (upload in <span class="mode">BINARY</span>- chmod to 755)</li>
+        <li> Sources.tar        (upload in <span class="mode">BINARY</span>- chmod to 755)</li>
+        </ol>
+
+<h3>Step 2. Run the Installer.</h3>
+ <br>
+ Example:    http://www.mysite.com/cgi-bin/ikonboard/installer.cgi
+<br><br>
+     Follow the on screen instructions of the installer entering the correct information as you proceed.
+       <ol>
+         <li> <b>iB System Profiler</b> - If all read "yes" click 'Proceed with the installation'
+            ( HRI registration key is optional it is ok if it reads no.)</li>
+
+         <li> <b>Board paths and other set-up information</b> - The board paths should match what is set in your AdminCP>Options/Settings>Board Paths. - Click Proceed.
+         </li>
+         <li> <b>Checking entered information</b> - all should read Yes, if no go back and check the path information entered. - Click Proceed.
+         </li>
+         <li> <b>Installing the Ikonboard files</b> - select Extract the tar files for me.           -Click Proceed
+         </li>
+         <li> <b>Tar archive set up</b> <br>
+                 a. Remove old ikonboard files before installing new? select Yes
+                 <br><br>
+                 b. Remove any old databases (members and posts)? This is for DBM users only. If your using SQL select yes. If you select no, you will need  to replace manually all the files contained in the /Database/config/ directory. select <span class="mode">NO</span>
+                  <br><br>
+                 c. Click Proceed.
+          </li>
+          <li> <b>Tar archives extracted succesfully</b> - click Proceed.
+          </li> 
+          <li> <b>Checking Ikonboard file structures</b> - if all read Yes - Click Proceed. 
+          </li>
+          <li> <b>Database set up</b><br><br>
+               If you select....
+                 <br><b>a. DBM Database</b> - Click proceed, then <span class="mode">STOP!</span> Do not go any further, you have completed the upgrade!.
+<br><br>
+                 <b>b. MySQL (PostgreSQL or Oracle) Database</b> - Click Proceed, 
+                        <br><br> 1. Fill Out the Set Up Information (The Information must                            match the settings when you originally set up the database.)
+                          <br><br>
+                             <b>Your Username:</b> Enter the database username<br>
+                             <b>Your Password:</b> Enter the database password.<br>
+                             <b>Your Database Name:</b> Enter database name.<br>
+                             <b>Your Database Server:</b> If other than 'localhost'<br>
+                             <b>Port Number for DB Server:</b> this is optional<br>
+                             <b>Table Prefix:</b> Default is set to ib_ (this must match what your current database uses) <br> 
+                             <b>Allow Ikonboard to create the needed tables? </b><span class="mode">***This MUST be set to no*** If you do not set this to no you will overwrite your current database and lose all your member's and posts. </span>
+<br><br><br>
+                          2. Click Proceed and <span class="mode">STOP!</span> Do not go any further, you now must run the 313_atlertable.cgi script. 
+           </li>
+         </ol>  
+         <hr align="center" width="90%" size="1">
+ <center>Once you get to the screen pictured below is when you know to stop. Do not go any further, otherwise you will overwrite your database!        
+        <br> <br><img src="images/databasecomplete.jpg" width="541" height="217" alt="stop screen" border="1" align="center">
+</center>
+ <hr align="center" width="90%" size="1">
+ 
+ <h3>Step 3 Finishing Up</h3>
+  <p>You must now delete the installer.cgi from your server. Now before viewing your upgraded board, clear your browser's cache. 
+  Some of the new images may not load unless you so. Or you may have to reload your browser a few times to get all the images to load properly. 
+  </p>
+  <p>Now access your board,( ex. http://www.mysite.com/cgi-bin/ikonboard/ikonboard.cgi)</p>
+  
+  <p><span class="lite">DBM users only:</span> You may notice that your board does not look as it should. You need to update your board template. 
+  In the Upgrade folder of the download zip you will find a board_template.txt file, copy the contents of that file. 
+  Now Go to your AdminCP>Skin/Templates>Edit Board Template and select "Original Board Template". Paste the contents of the board_template.txt and click "Edit This Template"
+  <br> Now your board should look correct.</p>
+  
+  <p><span class="lite">MySQL users:</span> You must run the 313_atlertable.cgi script. This will update your tables to be compatible with version 3.1.3 and function correctly.<br>
+  Once this script has run successfully you will have completed the upgrade!
+  </div>
+  <div align="center">
+  &copy; 2011 Ikonboard.net<br>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,38 @@
+##################################################################
+##								##
+##		iB 3.1.3 to iB 3.1.4 Information		##
+##								##
+##################################################################
+
+*******************
+* What's Changed  *
+*******************
+=> Fixed doctype statement
+=> Fixed problem with quoting posts
+=> Fixed find all posts by user bug
+=> Fixed delete cookies set by this board
+=> Corrected comment tags around board legend 
+
+
+*******************
+*  Changed Files  *
+*******************
+install_modules/admin.pl
+Sources/Lib/Func.pm
+Sources/Search/API/api_global.pm
+Sources/Post.pm
+Sources/iTextPasser
+Skin/Default/BoardView.pm
+ikonboard.cgi
+
+
+******************
+*  Known issues  *
+******************
+Post quotes made before using this version may no longer be visible 
+in non-Internet Explorer browsers.  This is due to the previous 
+quoting method contained "--" which were mistaken in browsers.
+
+One way to correct previous posts once this patch is applied is to
+manually edit the affected posts and remove the "--" which is likely
+to now be shown in those posts.

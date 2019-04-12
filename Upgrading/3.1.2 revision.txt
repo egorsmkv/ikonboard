@@ -1,0 +1,175 @@
+---------------------------------------------------------------------------
+Ikonboard 3.1.2  
+05-12-2003
+Revision History
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Changes and Updates since version 3.1.1
+---------------------------------------------------------------------------
+
+KEY:  [+]Update    [>]Bugfix      [#]New Feature
+
+
+[ADMINISTRATION]
+> Admin login Redirect
+> Ban control on admins and mods
+# Display Database Driver being used in Admin Center 
+> GCI to CGI in file manager
+> Partial member name matches when using "Edit Member"
+> Profile Problem with post stars 
+> Pruning members problem
+# Time Selectable Admin Control Panel
+> Warn feature: prevent unathorised access to it 
+
+[FORUMS/POSTS/MESSAGES]
++ Approved queue for Topics/Posts
+> "Edited by" not showing date & time
+> Error after posting new thread
+> Forum jump
+> "Next Unread" bug fixed
+> Post View Bug   
+> Quote bug fixed 
++ Speeding up Forum Redirect
+
+[MESSENGER]
+# Added pages to Messenger
+> Automatic Messaging bug
+> Fixed names not showing on "Sent" page
+# Flood control for Messenger
+# If PM's are off, stop members sending them PM's 
+# If PM's are off - stop members mailing each other 
+> Member Titles in Private Messages 
+> Messengerwords.pm corrected
+> Messenger popup error when using htaccess redirect 
+> Sent name fixed on sending PM's
+> Skin problem with Mass PM tab
+
+[MISCELLANEOUS]
+> Calender dates fixed
+> Changed spelling for custom member pips and member list 
++ Charset Encoding In Print Page
++ Full HTML Support in Emails 
+> MySQL Schematic - for Active Sessions rewritten 
+# New/improved Memberlist
+> Stats.pm file corruption
++ Stop META REFRESH 
++ Updated Oracle DB drivers 
+
+
+[MODERATION]
+> Forum Rules bug 
++ Forum Rules Link - Removed the two ">>"
+> ModCP Problem
+> ModCP: Approve Topics/Posts fix
+# Moderator Notification System 
+> Remove attachments when pruning forums 
+
+[REGISTRATION]
+> Guest names using @ symbol crashing topics
+> MSN field length 
+> Overtyping the Terms Of Service (TOS) when registering 
+> "Required fields" at registration bugfix
++ Stop guests or members reading 'hidden' or 'restricted' forums
+
+[SECURITY]
++ .htaccess and popups 
+> Arbitrary command execution 
+> Blocking Guests from viewing pinned topics 
++ Enhanced security on password protected forums 
+> Flood Control fix 
+
+[SKINS]
+# NotePad skin editting 
+> PIPs centered in the Member List 
+> WarnView skin bug
+
+[SSI]
+# Flash Avatar Support in SSI 
+> Headline News # of comments problem 
+> SSI Exported Activity date format fix 
+> SSI for news, quoting problem
+> SSI fix - stopping messages in private forums 
+
+
+
+
+
+---------------------------------------------------------------------------
+Files Updated since 3.1.1
+---------------------------------------------------------------------------
+
+installer.cgi
+ikonboard.cgi
+ikonboard.cfg
+
+[Sources]
+Boards.pm
+Forum.pm
+iPoll.pm
+iTextparser.pm
+Massmsend.pm
+Memberlist.pm
+ModCP.pm
+ModSet.pm
+Newest.pm
+Post.pm
+PrintPage.pm
+Profile.pm
+Register.pm
+Sessions.pm
+Topic.pm
+Warn.pm
+
+
+[Sources/Admin/]
+dbHandler.pm
+Filemanager.pm
+MemberControl.pm
+Menuadmin.pm
+Options.pm
+Session.pm
+Skin.pm
+skinControl.pm
+
+[Sources/Archive/]
+Tar.pm
+
+[Sources/Compress/]
+Zlib.pm
+
+[Sources/iDatabase/Driver/]
+Oracle.pm
+
+[Sources/Lib/]
+FUNC.pm
+
+[Sources/Misc/]
+MailMember.pm
+
+[Sources/SSI/]
+Parser.pm
+
+[Sources/UserCP/]
+Messenger.pm
+Messend.pm
+Messview.pm
+
+[Languages]
+BoardWords.pm
+ErrorWords.pm
+MessengerWords.pm
+ProfileWords.pm
+UniversalWords.pm
+
+[Data]
+SkinList.cfg
+
+[Database/config]
+mem_groups.cfg
+member_profiles.cfg
+message_data.cfg
+
+[INSTALL_DATA]
+mysql_scema
+oracle_schema

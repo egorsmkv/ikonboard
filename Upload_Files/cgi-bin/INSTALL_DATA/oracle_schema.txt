@@ -1,0 +1,445 @@
+CREATE TABLE ib_active_sessions (
+  ID varchar2(32) DEFAULT '0' NOT NULL,
+  MEMBER_NAME varchar2(32),
+  MEMBER_PASSWORD varchar2(32),
+  MEMBER_ID varchar2(32),
+  THIS_IP varchar2(16),
+  LAST_LOG_IN number(10),
+  USER_AGENT varchar2(80),
+  RUNNING_TIME number(10),
+  MEMBER_LOGSTATE number(1),
+  LOCATION varchar2(160),
+  LOG_IN_TYPE number(1),
+  MEMBER_GROUP number(3),
+  PRIMARY KEY (ID)
+);
+CREATE TABLE ib_address_books (
+  ID number(10) DEFAULT '0' NOT NULL,
+  IN_MEMBER_ID varchar2(32) NOT NULL,
+  MEMBER_ID varchar2(32) NOT NULL,
+  IN_MEMBER_NAME varchar2(32) NOT NULL,
+  RECEIVE_MSG number(1),
+  IN_MEMBER_DESC varchar2(128),
+  PRIMARY KEY (ID)
+);
+CREATE TABLE ib_attachments (
+  ID number(10) DEFAULT '0' NOT NULL,
+  MIME_TYPE varchar2(128),
+  FILE_NAME varchar2(255),
+  PRIMARY KEY (ID)
+);
+CREATE TABLE ib_authorisation (
+  ID number(10) DEFAULT '0' NOT NULL,
+  UNIQUE_CODE varchar2(32) NOT NULL,
+  DATE_ENTERED number(10) DEFAULT '0' NOT NULL,
+  MEMBER_ID varchar2(32) NOT NULL,
+  MEMBER_NAME varchar2(32) NOT NULL,
+  THIS_IP varchar2(16),
+  MEMBER_EMAIL varchar2(128) NOT NULL,
+  "_WHERE" varchar2(64),
+  MEMBER_GROUP number(2),
+  LOCATION varchar2(128),
+  INTERESTS varchar2(99999),
+  PRIMARY KEY (ID)
+);
+CREATE TABLE ib_calendar (
+  MEMBER_ID varchar2(32) NOT NULL,
+  MEMBER_NAME varchar2(32) NOT NULL,
+  DAY number(2) DEFAULT '0' NOT NULL,
+  MONTH number(2) DEFAULT '0' NOT NULL,
+  YEAR number(4) DEFAULT '0' NOT NULL,
+  TIME_ADJUST varchar2(4),
+  UTIME number(10) NULL,
+  FORUM_ID number(5) NULL,
+  TOPIC_ID number(10) NULL,
+  PRIMARY KEY (MEMBER_ID)
+);
+CREATE TABLE ib_categories (
+  CAT_ID number(3) DEFAULT '0' NOT NULL,
+  CAT_POS number(3),
+  CAT_STATE varchar2(10),
+  CAT_NAME varchar2(128) NOT NULL,
+  CAT_DESC varchar2(4000),
+  SUB_CAT_ID number(10),
+  VIEW varchar2(128),
+  IMAGE varchar2(128),
+  URL varchar2(128),
+  DISP_POS number(1),
+  PRIMARY KEY (CAT_ID)
+);
+CREATE TABLE ib_email_templates (
+  ID varchar2(20) NOT NULL,
+  TYPE char(1) NOT NULL,
+  TEMPLATE varchar2(4000),
+  PRIMARY KEY (ID)
+);
+CREATE TABLE ib_forum_info (
+  FORUM_ID number(5) DEFAULT '0' NOT NULL,
+  FORUM_TOPICS number(6),
+  FORUM_POSTS number(6),
+  FORUM_LAST_POST number(10),
+  FORUM_LAST_POSTER varchar2(32),
+  FORUM_LAST_POSTER_N varchar2(32),
+  FORUM_NAME varchar2(128) NOT NULL,
+  FORUM_DESC varchar2(4000),
+  FORUM_POSITION number(2),
+  FORUM_IBC number(1),
+  FORUM_HTML number(1),
+  FORUM_STATUS varchar2(10),
+  FORUM_START_THREADS varchar2(128),
+  FORUM_REPLY_THREADS varchar2(128),
+  FORUM_VIEW_THREADS varchar2(128),
+  FORUM_PROTECT varchar2(128),
+  CATEGORY number(2) DEFAULT '0' NOT NULL,
+  L_TOPIC_TITLE varchar2(32),
+  L_TOPIC_ID number(10),
+  SORT_KEY varchar2(32),
+  SORT_ORDER varchar2(32),
+  PRUNE_DAYS number(3),
+  SHOW_RULES number(1),
+  ALLOW_ATTACH number(1),
+  MODERATE number(1),
+  PRIMARY KEY (FORUM_ID)
+);
+CREATE TABLE ib_forum_moderators (
+  MODERATOR_ID number(5) DEFAULT '0' NOT NULL,
+  FORUM_ID number(5) DEFAULT '0' NOT NULL,
+  MEMBER_NAME varchar2(32) NOT NULL,
+  MEMBER_ID varchar2(32) DEFAULT '0' NOT NULL,
+  EDIT_POST number(1),
+  EDIT_TOPIC number(1),
+  DELETE_POST number(1),
+  DELETE_TOPIC number(1),
+  VIEW_IP number(1),
+  OPEN_TOPIC number(1),
+  CLOSE_TOPIC number(1),
+  MASS_MOVE number(1),
+  MASS_PRUNE number(1),
+  MOVE_TOPIC number(1),
+  PIN_TOPIC number(1),
+  UNPIN_TOPIC number(1),
+  POST_Q number(1),
+  TOPIC_Q number(1),
+  ALLOW_WARN number(1),
+  ADD_TOPIC_WATCH number(1),
+  REMOVE_TOPIC_WATCH number(1),
+  PRIMARY KEY (MODERATOR_ID)
+);
+CREATE TABLE ib_forum_poll_voters (
+  ID number(20) DEFAULT '0' NOT NULL,
+  VOTER_IP varchar2(16) NOT NULL,
+  "DATE" number(10) DEFAULT '0' NOT NULL,
+  POLL_ID number(10),
+  MEMBER_ID varchar2(32),
+  FORUM_ID number(5),
+  PRIMARY KEY (ID)
+);
+CREATE TABLE ib_forum_polls (
+  ID number(10) DEFAULT '0' NOT NULL,
+  POLL_ID number(10) DEFAULT '0' NOT NULL,
+  POLL_TITLE varchar2(128) DEFAULT '0' NOT NULL,
+  POLL_DESC CLOB,
+  POLL_STARTED number(10),
+  POLL_ANSWERS CLOB,
+  POLL_STARTER varchar2(32),
+  POLL_STARTER_N varchar2(32),
+  TOTAL_VOTES number(10),
+  FORUM_ID number(5),
+  PRIMARY KEY (ID)
+);
+CREATE TABLE ib_forum_posts (
+  POST_ID number(10) DEFAULT '0' NOT NULL,
+  AUTHOR varchar2(32),
+  ENABLE_SIG number(1),
+  ENABLE_EMO number(1),
+  IP_ADDR varchar2(16),
+  POST_DATE number(10),
+  POST_ICON number(3),
+  POST CLOB,
+  AUTHOR_TYPE number(1),
+  QUEUED number(1),
+  TOPIC_ID number(10),
+  FORUM_ID number(5),
+  ATTACH_ID varchar2(64),
+  ATTACH_HITS number(5),
+  ATTACH_TYPE varchar2(128),
+  PRIMARY KEY (POST_ID)
+);
+CREATE TABLE ib_forum_rules (
+  ID number(5) DEFAULT '0' NOT NULL,
+  RULES_TITLE varchar2(128) NOT NULL,
+  RULES_TEXT CLOB,
+  LAST_UPDATE number(10),
+  SHOW_ALL number(1),
+  PRIMARY KEY (ID)
+);
+CREATE TABLE ib_forum_subscriptions (
+  ID number(9) DEFAULT '0' NOT NULL,
+  MEMBER_ID varchar2(32) NOT NULL,
+  MEMBER_NAME varchar2(32),
+  EMAIL_ADDRESS varchar2(100),
+  FORUM_ID number(5) DEFAULT '0',
+  TOPIC_ID number(10) DEFAULT '0',
+  DATE_STARTED number(10),
+  SEND_ONCE number(1) DEFAULT '0',
+  PRUNE number(2),
+  rFULL number(1),
+  PRIMARY KEY (ID)
+);
+CREATE TABLE ib_forum_topics (
+  TOPIC_ID number(10) DEFAULT '0' NOT NULL,
+  TOPIC_TITLE varchar2(70) NOT NULL,
+  TOPIC_DESC varchar2(70),
+  TOPIC_STATE varchar2(8),
+  TOPIC_POSTS number(4),
+  TOPIC_STARTER varchar2(32),
+  TOPIC_START_DATE number(10),
+  TOPIC_LAST_POSTER varchar2(32),
+  TOPIC_LAST_DATE number(10),
+  TOPIC_ICON number(2),
+  TOPIC_STARTER_N varchar2(32),
+  TOPIC_LASTP_N varchar2(32),
+  POLL_STATE varchar2(8),
+  LAST_VOTE number(10),
+  TOPIC_VIEWS number(5),
+  FORUM_ID number(5),
+  APPROVED number(1),
+  TOPIC_AUTHOR_TYPE number(1),
+  PIN_STATE number(1),
+  MOVED_TO varchar2(64),
+  WATCHED number(1),
+  PRIMARY KEY (TOPIC_ID)
+);
+CREATE TABLE ib_help (
+  ID number(3) DEFAULT '0' NOT NULL,
+  TITLE varchar2(128) NOT NULL,
+  TEXT CLOB,
+  PRIMARY KEY (ID)
+);
+CREATE TABLE ib_mem_groups (
+  ID number(2) DEFAULT '0' NOT NULL,
+  VIEW_BOARD number(1),
+  MEM_INFO number(1),
+  OTHER_TOPICS number(1),
+  USE_SEARCH number(1),
+  EMAIL_FRIEND number(1),
+  INVITE_FRIEND number(1),
+  EDIT_PROFILE number(1),
+  POST_NEW_TOPICS number(1),
+  REPLY_OWN_TOPICS number(1),
+  REPLY_OTHER_TOPICS number(1),
+  EDIT_OWN_POSTS number(1),
+  DELETE_OWN_POSTS number(1),
+  OPEN_CLOSE_TOPICS number(1),
+  DELETE_OWN_TOPICS number(1),
+  POST_POLLS number(1),
+  VOTE_POLLS number(1),
+  USE_PM number(1),
+  IS_SUPMOD number(1),
+  ACCESS_CP number(1),
+  TITLE varchar2(32) NOT NULL,
+  CAN_REMOVE number(1),
+  READ_AD_LOGS number(1),
+  DELETE_AD_LOGS number(1),
+  EDIT_GROUPS number(1),
+  APPEND_EDIT number(1),
+  ACCESS_OFFLINE number(1),
+  AVOID_Q number(1),
+  AVOID_FLOOD number(1),
+  TEAM_ICON varchar2(64),
+  ATTACH_MAX number(20),
+  ADD_EVENT char(3),
+  UPLOAD_AVATARS number(1),
+  MAX_MESSAGES number(3),
+  PRIMARY KEY (ID)
+);
+CREATE TABLE ib_member_notepads (
+  MEMBER_ID varchar2(32) DEFAULT '0' NOT NULL,
+  NOTEPAD_TEXT CLOB,
+  SAVED_P CLOB,
+  SAVED_M CLOB,
+  PRIMARY KEY (MEMBER_ID)
+);
+CREATE TABLE ib_member_profiles (
+  MEMBER_ID varchar2(32) DEFAULT '0' NOT NULL,
+  MEMBER_NAME varchar2(32) NOT NULL,
+  MEMBER_GROUP number(2) DEFAULT '0' NOT NULL,
+  MEMBER_PASSWORD varchar2(32) NOT NULL,
+  MEMBER_EMAIL varchar2(100) NOT NULL,
+  MEMBER_JOINED number(10) DEFAULT '0' NOT NULL,
+  MEMBER_LEVEL number(5),
+  MEMBER_IP varchar2(16) NOT NULL,
+  MEMBER_AVATAR varchar2(128),
+  AVATAR_DIMS varchar2(9),
+  MEMBER_POSTS number(7),
+  PHOTO varchar2(128),
+  CANCEL_SUBS number(3),
+  AOLNAME varchar2(40),
+  ICQNUMBER varchar2(40),
+  LOCATION varchar2(128),
+  SIGNATURE varchar2(4000),
+  WEBSITE varchar2(70),
+  YAHOONAME varchar2(32),
+  MEMBER_TITLE varchar2(128),
+  LAST_UPDATE number(10),
+  ALLOW_ADMIN_EMAILS number(1) DEFAULT '1',
+  TIME_ADJUST char(3),
+  INTERESTS varchar2(4000),
+  HIDE_EMAIL number(1),
+  PM_REMINDER char(3),
+  EMAIL_FULL_POST char(3),
+  MEMBER_SKIN varchar2(32),
+  WARN_LEVEL number(2),
+  "LANGUAGE" varchar2(32),
+  MSNNAME varchar2(40),
+  LAST_POST varchar2(32),
+  ALLOW_POST number(1),
+  VIEW_SIGS number(1),
+  VIEW_IMG number(1),
+  VIEW_AVS number(1),
+  LAST_LOG_IN number(10),
+  LAST_ACTIVITY number(10),
+  GENDER number(1),
+  MEMBER_NAME_R varchar2(40),
+  POST_FONT_COLOR varchar2(15),
+  MEMBER_AVADIR varchar2(99999),
+  RATINGS varchar2(99999),
+  POST_PER_DAY number(3),
+  POST_PERIOD number(2),
+  RATED varchar2(99999),
+  PRIMARY KEY (MEMBER_ID)
+);
+CREATE TABLE ib_member_titles (
+  ID number(5) DEFAULT '0' NOT NULL,
+  POSTS number(10),
+  TITLE varchar2(128),
+  ADVANCE_GROUP number(5),
+  PIPS varchar2(128),
+  PRIMARY KEY (ID)
+);
+CREATE TABLE ib_message_data (
+  MESSAGE_ID number(10) DEFAULT '0' NOT NULL,
+  "DATE" number(10),
+  READ_STATE number(1),
+  TITLE varchar2(128),
+  MESSAGE CLOB,
+  MESSAGE_ICON number(2),
+  FROM_ID varchar2(32),
+  FROM_NAME varchar2(32),
+  REPLY number(1),
+  REPLY_DATE number(10),
+  VIRTUAL_DIR varchar2(32),
+  MEMBER_ID varchar2(32),
+  RECIPIENT_ID varchar2(32),
+  RECIPIENT_NAME varchar2(32),
+  PRIMARY KEY (MESSAGE_ID)
+);
+CREATE TABLE ib_message_stats (
+  MEMBER_ID varchar2(32) NOT NULL,
+  LAST_READ number(10),
+  NEW_MESSAGES number(2),
+  LAST_FROM_NAME varchar2(32),
+  LAST_FROM_ID varchar2(32),
+  LAST_MSG_TITLE varchar2(128),
+  LAST_MSG_ID number(10),
+  LAST_SENT number(10),
+  TOTAL_MESSAGES number(4),
+  VIRTUAL_DIR varchar2(4000),
+  SHOW_POPUP number(1),
+  PRIMARY KEY (MEMBER_ID)
+);
+CREATE TABLE ib_mod_email (
+  ID number(5) DEFAULT '0' NOT NULL,
+  FORUM_ID number(5) DEFAULT '0' NOT NULL,
+  FORUM_NAME varchar2(128),
+  EMAIL varchar2(128),
+  MEMBER_ID varchar2(32) NOT NULL,
+  MEMBER_NAME varchar2(32),
+  TEXT CLOB DEFAULT EMPTY_CLOB() NOT NULL,
+  CHOICE number(1) DEFAULT '0' NOT NULL,
+  WHENE number(1) DEFAULT '0' NOT NULL,
+  SENT number(1) DEFAULT '0' NOT NULL,
+  PRIMARY KEY (ID)
+);
+CREATE TABLE ib_mod_posts (
+  ID number(8) DEFAULT '0' NOT NULL,
+  AUTHOR varchar2(32),
+  IP_ADDR varchar2(16),
+  POST_DATE number(10),
+  POST CLOB,
+  AUTHOR_TYPE number(1),
+  TOPIC_ID number(10) DEFAULT '0',
+  FORUM_ID number(5) DEFAULT '0',
+  TYPE varchar2(5),
+  POST_ID number(10),
+  ATTACH_ID varchar2(64),
+  PRIMARY KEY (ID)
+);
+CREATE TABLE ib_moderator_logs (
+  ID number(5) DEFAULT '0' NOT NULL,
+  FORUM_ID number(5),
+  TOPIC_ID number(10) DEFAULT '0',
+  POST_ID number(10) DEFAULT '0',
+  MEMBER_ID varchar2(32) NOT NULL,
+  MEMBER_NAME varchar2(32) NOT NULL,
+  REMOTE_ADDR varchar2(32),
+  HTTP_REFERER varchar2(255),
+  "TIME" number(10),
+  TOPIC_TITLE varchar2(128),
+  ACTION varchar2(128),
+  QUERY_STRING varchar2(128),
+  PRIMARY KEY (ID)
+);
+CREATE TABLE ib_search_log (
+  LOG_ID number(20) DEFAULT '0' NOT NULL,
+  AUTHOR_ID varchar2(32),
+  MEMBER_NAME varchar2(32),
+  "DATE" number(10),
+  TOPIC_TITLE varchar2(128),
+  POST CLOB,
+  FORUM_ID number(5) DEFAULT '0' NOT NULL,
+  TOPIC_ID number(10) DEFAULT '0',
+  POST_ID number(10) DEFAULT '0',
+  POSTER_IP varchar2(16),
+  PRIMARY KEY (LOG_ID)
+);
+CREATE TABLE ib_ssi_templates (
+  ID varchar2(20) NOT NULL,
+  TEMPLATE CLOB,
+  EXPORT_FILENAME varchar2(32),
+  PRIMARY KEY (ID)
+);
+CREATE TABLE ib_templates (
+  ID varchar2(20) NOT NULL,
+  TEMPLATE CLOB,
+  NAME varchar2(128),
+  PRIMARY KEY (ID)
+);
+CREATE TABLE ib_topic_views (
+  ID number(10) DEFAULT '0' NOT NULL,
+  TOPIC_ID number(10) DEFAULT '0' NOT NULL,
+  FORUM_ID number(5) DEFAULT '0' NOT NULL,
+  MEMBER_ID varchar2(32),
+  VIEWED number(10),
+  POSTED_IN number(1) DEFAULT '0' NOT NULL,
+  SENT number(1) DEFAULT '0' NOT NULL,
+  PRIMARY KEY (ID)
+);
+
+CREATE INDEX authorisation_idx1 ON ib_authorisation(DATE_ENTERED);
+CREATE INDEX authorisation_idx2 ON ib_authorisation(MEMBER_ID);
+CREATE INDEX calendar_idx1 ON ib_calendar(FORUM_ID);
+CREATE INDEX calendar_idx2 ON ib_calendar(TOPIC_ID);
+CREATE INDEX forum_poll_voters_idx1 ON ib_forum_poll_voters(MEMBER_ID,POLL_ID,FORUM_ID);
+CREATE INDEX forum_polls_idx1 ON ib_forum_polls(FORUM_ID,POLL_ID);
+CREATE INDEX forum_posts_idx1 ON ib_forum_posts(TOPIC_ID,QUEUED); 
+CREATE INDEX forum_posts_idx2 ON ib_forum_posts(FORUM_ID,TOPIC_ID,QUEUED);
+CREATE INDEX forum_posts_idx3 ON ib_forum_posts(POST_DATE);
+CREATE INDEX forum_subscriptions_idx1 ON ib_forum_subscriptions(FORUM_ID,TOPIC_ID,MEMBER_ID);
+CREATE INDEX forum_topics_idx1 ON ib_forum_topics(FORUM_ID,PIN_STATE,TOPIC_LAST_DATE);
+CREATE INDEX forum_topics_idx2 ON ib_forum_topics(WATCHED,FORUM_ID);
+CREATE INDEX forum_topics_idx3 ON ib_forum_topics(TOPIC_LAST_DATE);
+CREATE INDEX message_data_idx1 ON ib_message_data(MEMBER_ID);
+CREATE INDEX message_data_idx2 ON ib_message_data("DATE");
+CREATE INDEX topic_views_idx1 ON ib_topic_views(MEMBER_ID);
+CREATE INDEX search_log_idx1 ON ib_search_log(FORUM_ID,"DATE");

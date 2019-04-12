@@ -1,0 +1,134 @@
+/* Ikonboard new look stylesheet */
+
+BODY {
+	margin:0px;
+	padding:0px;
+	background:#e5e5e5;
+	color:#000000;
+	font:normal 13px 'arial',sans-serif;
+}
+
+A, a:link, a:visited, a:active {
+	background:inherit;
+	color: #000066; 
+	text-decoration: underline;
+}
+a:hover {
+	background:inherit;
+	color: #0000AA; 
+	text-decoration: none;
+}
+
+H1 {
+	margin:0px;
+	padding: 3px 0px;
+	font: bold 18px 'verdana',sans-serif;
+}
+
+H2 {
+	margin:5px 0px 0px 0px;
+	padding:0px;
+	font: bold 15px 'verdana',sans-serif;
+}
+
+#heading {
+	margin:0 auto;
+	padding:5px 0px;
+	width:772px;
+	height:60px;
+	background:#ffffff;
+	color:#000000;
+	font-family: Verdana;
+	font-size: 10px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+}
+#navigation {
+	width:772px;
+	margin:0 auto;
+	padding:2px 0px;
+	font-family: Verdana;
+	font-size: 12px;
+	font-style: normal;
+	background-color: #d0d0d0;
+	text-align: center;
+	border-top:1px dotted #666666;
+	border-bottom:1px dotted #666666;
+	border-left:0px;
+	border-right:0px;
+}
+
+#naviagtion a {
+	padding:2px;
+}
+
+#navigation a:link, #navigation a:visited{
+	color: #000000;
+	text-decoration:underline;
+}
+
+#navigation a:hover {
+	background-color:#eeeeee;
+	color: #000000;
+	text-decoration:none;
+}
+
+#content {
+	display:block;
+	width: 762px;
+	min-height:415px;
+	margin:0px auto;
+	padding:5px;
+	font-family: Arial;
+	font-size: 14px;
+	background-color: #f5f5f5;
+}
+
+#forumcontent {
+	display:block;
+	width: 98%;
+	min-height:415px;
+	margin:0px auto;
+	padding:5px;
+	font-family: Arial;
+	font-size: 14px;
+	background-color: #f5f5f5;
+}
+
+.homesquares {
+	display: block;
+	float:left;
+	width:245px;
+	height:125px;
+	margin: 3px;
+	background:#ffffff;
+	border:1px solid #000000;
+	padding: 0px;
+	vertical-align:top;
+}
+
+.homesquares P {
+	margin: 0px 0px;
+	padding: 2px 5px;
+	font: normal 14px 'arial',san-serif;
+}
+
+.homesquares H3 {
+	margin:0px;
+	padding: 2px 0px;
+	background:#666666;
+	color:#e5e5e5;
+	font: bold 12px 'verdana',sans-serif;
+	text-align:center;
+}
+
+#footer {
+	display:block;
+	width: 772px;
+	margin:0 auto;
+	padding:2px 0px;
+	font-family: Verdana;
+	font-size: 11px;
+	text-align:center;
+}
